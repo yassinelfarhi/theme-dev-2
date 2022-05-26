@@ -1,2 +1,22 @@
 {% section 'article-template' %}
 {% section 'shop-now' %}
+<script type="application/ld+json">
+{ "@context": "https://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "{{ aticle.title }}",
+ "image": "{{ article.image }}",
+ "editor": "{{ aticle.author }}", 
+ "genre": "search engine optimization", 
+ "keywords": {% for tag in article.tags %} " {{ tag }}" {% endfor %}, 
+ "publisher": "{{ article.author }}",
+ "url": "{{ article.url }}",
+ "datePublished": "{{ article.published_at }}",
+ "dateModified": "{{ article.updated_at }}",
+ "description": "{{ article.excerpt }}",
+ "articleBody": "{{ article.content }}",
+   "author": {
+    "@type": "Person",
+    "name": "{{ aticle.author }}"
+  }
+ }
+</script>
