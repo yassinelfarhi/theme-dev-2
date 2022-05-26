@@ -145,7 +145,7 @@
   
   
   <body class="prestige--v1 {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-    <h2 style="display: none; font-size: 22px;"> moroccan handcrafted caftans and traditional clothing</h2>
+    {% if tempalte.name == "index" %} <h2 style="display: none; font-size: 22px;"> moroccan handcrafted caftans and traditional clothing</h2> {% endif %}
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
     <span class="LoadingBar"></span>
     <div class="PageOverlay"></div>
