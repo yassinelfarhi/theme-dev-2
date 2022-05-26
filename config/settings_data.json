@@ -107,14 +107,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "fb4b0a07-00d4-4cc4-8b28-eea3aed5088e": {
-            "type": "text",
-            "settings": {
-              "title": "Company Registration",
-              "content": "<p>DAR AL KAFTAN , Sole proprietorship<\/p><p>TRADE REGISTER  : 38 252<\/p><p>TAXE IDENTIFICATION : 6910109<\/p><p>Commun Company Identifier : 002284717000082<\/p><p><\/p>",
-              "show_social_media": false
-            }
-          },
           "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e": {
             "type": "links",
             "settings": {
@@ -138,7 +130,6 @@
           }
         },
         "block_order": [
-          "fb4b0a07-00d4-4cc4-8b28-eea3aed5088e",
           "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e",
           "19829f78-8326-4064-a07b-dfeb7efd4480",
           "7eb52ee6-8321-4d32-8769-778a5f83e4cc"
