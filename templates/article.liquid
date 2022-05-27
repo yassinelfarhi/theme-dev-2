@@ -7,7 +7,7 @@
  "image": "{{ article.image }}",
  "editor": "{{ aticle.author }}", 
  "genre": "search engine optimization", 
- "keywords": {% for tag in article.tags %} ",{{ tag }}" {% endfor %}, 
+ "keywords": "{% for tag in article.tags %} ,{{ tag }} {% endfor %}", 
  "publisher": "{{ article.author }}",
  "url": "{{ article.url }}",
  "datePublished": "{{ article.published_at }}",
