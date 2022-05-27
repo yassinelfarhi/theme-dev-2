@@ -156,10 +156,10 @@ background: #ed2;
   "name": "caftan",
   "image": "{{ product.featured_image }}",
   "description": "{{ product.description }}",
+  "material":"{{ product.options_by_name['Material'].values }}",
   "brand": {
     "@type": "Brand",
-    "name": "maison du caftan",
-     "material":"{{ product.options_by_name['Material'].values }}"
+    "name": "maison du caftan"
   },
   "offers": {
     "@type": "AggregateOffer",
