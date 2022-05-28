@@ -265,7 +265,20 @@
  </ul>
  <div class="cgt-content">
  <div id="tab-1" class="tab active">
- Enter Product Description Over Here.
+  {% assign product_collection = collection.title %}
+             {% case product_collection %}
+               {% when "CAFTAN" %}
+                    {% include "caftan_description" %}
+                   
+               {% when "JELLABA" %}
+                   {% include "jellaba_description" %}
+              {% when "TAKCHITA" %}
+                  {% include "takchita_description" %}
+               {% else %}
+                  
+             {% endcase %}
+              
+   
  </div>
  <div id="tab-2" class="tab">
  Enter Size Chart Over here table, images, etc.
@@ -279,19 +292,7 @@
               
               
               
-            {% assign product_collection = collection.title %}
-             {% case product_collection %}
-               {% when "CAFTAN" %}
-                    {% include "caftan_description" %}
-                   
-               {% when "JELLABA" %}
-                   {% include "jellaba_description" %}
-              {% when "TAKCHITA" %}
-                  {% include "takchita_description" %}
-               {% else %}
-                  
-             {% endcase %}
-              
+          
               
               {% comment %} {{ product.description }} {% endcomment %}
             </div>
