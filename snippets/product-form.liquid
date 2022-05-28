@@ -24,25 +24,20 @@ for size, we use it to display a size chart (if applicable)
           {%- assign is_option_with_color_swatch = false -%}
         {%- endif -%}
 
-
-        <div style={% if option.name == "Material" %} "display: none;" {% endif %} class="ProductForm__Option">
-          <div class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
+        <div class="ProductForm__Option">
+          <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
             {%- if is_option_with_color_swatch -%}
               {%- assign downcase_value = option.selected_value | downcase -%}
 
               <span class="ProductForm__ColorSwatch {% if downcase_value == 'white' %}ProductForm__ColorSwatch--white{% endif %}" style="background-color: {{ option.selected_value | replace: ' ', '' }}; background-image: url({{ option.selected_value | handle | append: '.png' | asset_url }})"></span>
               <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
               <span class="ProductForm__OptionCount Text--subdued">{{ 'product.form.colors_count' | t: count: option.values.size }}</span>
-           {%- else -%}
-             
-            <span style={% if option.name == "Material" %} "display: none" {% endif %} class="ProductForm__OptionName">{{ option.name }}: <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
-            
-              
+            {%- else -%}
+              <span class="ProductForm__OptionName">{{ option.name }}: <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
             {%- endif -%}
 
             {%- include 'icon' with 'select-arrow' -%}
-          </div>
-
+          </button>
 
           {%- capture popover_html -%}
             {%- if color_label contains downcase_option and section.settings.show_color_carousel -%}
@@ -171,19 +166,6 @@ for size, we use it to display a size chart (if applicable)
         </div>
       {%- endfor -%}
 
- {%- if color_swatch != blank -%}
-            {%- capture color_swatch_list -%}
-              <div class="ProductItem__ColorSwatchList">
-                {{- color_swatch -}}
-              </div>
-            {%- endcapture -%}
-          {%- endif -%}
-        {%- endif -%}
-
-
-
-      
-
       <div class="no-js ProductForm__Option">
         <div class="Select Select--primary">
           {%- include 'icon' with 'select-arrow' -%}
@@ -232,16 +214,6 @@ for size, we use it to display a size chart (if applicable)
         {%- endif -%}
       </p>
     {%- endif -%}
-    <div class="trust-badges">
-     <img class="trust-payement-badges" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/safe.webp?v=1651146127" loading="lazy" >
-     <img style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/mda-en.png?v=1651147765" loading="lazy" >
-         <div class="Product__ShareList__block" >
-            <a class="Product__ShareItem__block" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'facebook' -%} Facebook</a>
-            <a class="Product__ShareItem__block" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener">{%- include 'icon' with 'pinterest' -%} Pinterest</a>
-            <a class="Product__ShareItem__block" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'twitter' -%} Twitter</a>
-          </div>
-    </div> 
-        
   </div>
 
   {%- comment -%}
