@@ -24,33 +24,11 @@ for size, we use it to display a size chart (if applicable)
           {%- assign is_option_with_color_swatch = false -%}
         {%- endif -%}
 
-        <div style={% if option.name == "Material" %} "display: none;" {% endif %} class="ProductForm__Option ProductForm__Option--labelled"">
+        <div style={% if option.name == "Material" %} "display: none;" {% endif %} class="ProductForm__Option"">
           <div class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
             {%- if is_option_with_color_swatch -%}
               {%- assign downcase_value = option.selected_value | downcase -%}
- <ul class="{% if show_color_swatch %}ColorSwatchList HorizontalList HorizontalList--spacingTight{% else %}Linklist{% endif %}">
-                        {%- for tag in collection.all_tags -%}
-                          {%- assign tag_parts = tag | split: '_' -%}
 
-                          {%- if tag_parts.first != group -%}
-                            {%- continue -%}
-                          {%- endif -%}
-
-                          {%- if show_color_swatch -%}
-                            <li class="HorizontalList__Item">
-                              <button type="button" class="ColorSwatch {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag" data-tooltip="{{ tag_parts.last | escape }}" style="background-color: {{ tag_parts.last | split: ' ' | last | handle }}; background-image: url({{ tag_parts.last | handle | append: '.png' | asset_url }})">
-                                <span class="u-visually-hidden">{{ tag_parts.last }}</span>
-                              </button>
-                            </li>
-                          {%- else -%}
-                            <li class="Linklist__Item {% if current_tags contains tag %}is-selected{% endif %}">
-                              <button type="button" class="Text--subdued Link Link--primary {% if current_tags contains tag %}is-active{% endif %}" data-tag="{{ tag | handle }}" data-action="toggle-tag">
-                                {{- tag_parts.last -}}
-                              </button>
-                            </li>
-                          {%- endif -%}
-                        {%- endfor -%}
-                      </ul>
               <span class="ProductForm__ColorSwatch {% if downcase_value == 'white' %}ProductForm__ColorSwatch--white{% endif %}" style="background-color: {{ option.selected_value | replace: ' ', '' }}; background-image: url({{ option.selected_value | handle | append: '.png' | asset_url }})"></span>
               <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
               <span class="ProductForm__OptionCount Text--subdued">{{ 'product.form.colors_count' | t: count: option.values.size }}</span>
@@ -111,6 +89,12 @@ for size, we use it to display a size chart (if applicable)
                     </div>
                   {%- endfor -%}
                 </div>
+
+
+
+
+
+
 
                 <div class="VariantSelector__Info">
                   <div class="VariantSelector__ChoiceList">
@@ -240,7 +224,7 @@ for size, we use it to display a size chart (if applicable)
       </p>
     {%- endif -%}
     <div class="trust-badges">
-     <img class="trust-payement-badges" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/safe.webp?v=1651146127" loading="lazy" >
+     <img class="trust-payement-badges" style="margin-top: 5px; display:none" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/safe.webp?v=1651146127" loading="lazy" >
      <img style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/mda-en.png?v=1651147765" loading="lazy" >
          <div class="Product__ShareList__block" >
             <a class="Product__ShareItem__block" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'facebook' -%} Facebook</a>
