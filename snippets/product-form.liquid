@@ -24,6 +24,7 @@ for size, we use it to display a size chart (if applicable)
           {%- assign is_option_with_color_swatch = false -%}
         {%- endif -%}
 
+
         <div style={% if option.name == "Material" %} "display: none;" {% endif %} class="ProductForm__Option">
           <div class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
             {%- if is_option_with_color_swatch -%}
@@ -41,6 +42,7 @@ for size, we use it to display a size chart (if applicable)
 
             {%- include 'icon' with 'select-arrow' -%}
           </div>
+
 
           {%- capture popover_html -%}
             {%- if color_label contains downcase_option and section.settings.show_color_carousel -%}
@@ -168,6 +170,19 @@ for size, we use it to display a size chart (if applicable)
           {%- assign product_popovers = product_popovers | append: popover_html -%}
         </div>
       {%- endfor -%}
+
+ {%- if color_swatch != blank -%}
+            {%- capture color_swatch_list -%}
+              <div class="ProductItem__ColorSwatchList">
+                {{- color_swatch -}}
+              </div>
+            {%- endcapture -%}
+          {%- endif -%}
+        {%- endif -%}
+
+
+
+      
 
       <div class="no-js ProductForm__Option">
         <div class="Select Select--primary">
