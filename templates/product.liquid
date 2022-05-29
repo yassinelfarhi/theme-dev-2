@@ -180,7 +180,3 @@ background: #ed2;
   }
 }
 </script>
-
-{% if product.available and product.variants.size > 1 %}
-{% render 'swatch' for product.options as swatch %}
-{% endif %}
