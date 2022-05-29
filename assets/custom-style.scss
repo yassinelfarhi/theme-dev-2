@@ -26,7 +26,8 @@ color:#c2a284;
 
 }
 
-.ProductForm__Variants .ProductForm__Option:nth-child(2){
+.ProductForm__Variants > .ProductForm__Option:nth-of-type(2) > .ProductForm__Item{
 
 display:none !important;
 }
+
