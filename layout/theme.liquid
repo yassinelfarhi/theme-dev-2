@@ -266,6 +266,16 @@
 
 
 </body>
+  
+  
+  {% if request.page_type == 'product' %}
+    {% if product.options contains 'Size' %}
+      {% assign chart = product.vendor | handleize | append: "-size-chart" %}
+      {% unless pages[chart].empty? or pages[chart].content == blank %}
+        {% render 'size-chart' %}
+      {% endunless %}
+    {% endif %}
+  {% endif %}
 
 
 </html>
