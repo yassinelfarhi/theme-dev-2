@@ -297,7 +297,12 @@
             </div>
           {%- endif -%}
 
-          
+          {% if product.options contains 'Size' %}
+      {% assign chart = product.vendor | handleize | append: "-size-chart" %}
+      {% unless pages[chart].empty? or pages[chart].content == blank %}
+        <a class="trigger-pop-up btn">See Size Chart</a>
+      {% endunless %}
+    {% endif %}
              
               <div class="Product__ShareList__block" >
             <a class="Product__ShareItem__block" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">{%- include 'icon' with 'facebook' -%} Facebook</a>
