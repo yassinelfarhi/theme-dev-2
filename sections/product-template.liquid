@@ -255,12 +255,7 @@
                   </ul>
 
           
-          {% if product.options contains 'Size' %}
-      {% assign chart = product.vendor | handleize | append: "-size-chart" %}
-      {% unless pages[chart].empty? or pages[chart].content == blank %}
-        <a class="trigger-pop-up btn">See Size Chart</a>
-      {% endunless %}
-    {% endif %}
+          
           
           
           {%- if section.settings.description_below_add_to_cart -%}
