@@ -349,13 +349,13 @@
 
           <div class="Drawer__Content">
             <div class="Drawer__Main" data-scrollable>
-             {% comment %} {} {{ filters_content }} {% endcomment %}
+              {{ filters_content }}
 
-             {% for subcol in collection.metafieldscollection.my_fields.subcollections %}
+             {% comment %} {% for subcol in collection.metafieldscollection.my_fields.subcollections %}
 
                 {{ subcol }}
 
-             {% endfor %}
+             {% endfor %} {% endcomment %}
             </div>
 
             <div class="Drawer__Footer Drawer__Footer--padded" data-drawer-animated-bottom>
