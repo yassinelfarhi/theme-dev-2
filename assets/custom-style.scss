@@ -9,6 +9,11 @@
   
 }
 
+@media screen and (min-width: 1240px) {
+  .Product__Gallery {
+    margin-bottom: 13px !important; }
+  }
+
 .Product__ShareList__block{
   text-align:center;
 }
