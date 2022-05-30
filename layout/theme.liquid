@@ -150,14 +150,10 @@
          <link rel="stylesheet" href="{{ 'custom-style.scss' | asset_url }}">
   
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  
-<!--   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer="defer"></script> -->
-  
-  
-    <script type="text/javascript" src="{{ 'flickity.min.js' | asset_url }}" defer="defer"></script>
-  
-  
-  
+
+
+  {% comment %} <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer="defer"></script> {% endcomment %}
+  <script src="{{ 'flickity.min.js' | asset_url }}"></script>
   {% if template contains 'product' %}
   <script type="text/javascript" src="{{ 'Drift.min.js' | asset_url }}" defer="defer"></script>
   {% endif %}
@@ -266,7 +262,6 @@
 
 
 </body>
-  
 
 
 </html>

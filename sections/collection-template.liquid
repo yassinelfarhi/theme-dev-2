@@ -228,6 +228,7 @@
 
         {%- assign quick_links = linklists[section.settings.filter_menu] -%}
 
+        
         {%- capture filters_content -%}
           {%- if quick_links != empty -%}
             <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
@@ -348,7 +349,13 @@
 
           <div class="Drawer__Content">
             <div class="Drawer__Main" data-scrollable>
-              {{ filters_content }}
+             {% comment %} {} {{ filters_content }} {% endcomment %}
+
+             {% for subcol in collection.metafieldscollection.my_fields.subcollections %}
+
+                {{ subcol }}
+
+             {% endfor %}
             </div>
 
             <div class="Drawer__Footer Drawer__Footer--padded" data-drawer-animated-bottom>
