@@ -225,8 +225,12 @@
         Implementation note: the filters can be displayed in two different ways: in a sidebar menu, always visible, or in a drawer. Due to that, we are
         setting the general code here, and then we will output it twice.
         {%- endcomment -%}
-
-        {%- assign quick_links = linklists[section.settings.filter_menu] -%}
+         {% if collection.title == "clothing accesory" %}
+        
+        {%- assign quick_links = linklists.clothing-accesory -%}
+         {% else %}
+         {%- assign quick_links = linklists[section.settings.filter_menu] -%}
+         {% endif %}
 
         
         {%- capture filters_content -%}
