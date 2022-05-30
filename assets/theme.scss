@@ -9556,7 +9556,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 
 @include av-mq('desk') {
   .Product__Gallery {
-    margin-bottom: 13px;
+    margin-bottom: 13px !important;
   }
 
   .Product__Gallery--withThumbnails {
