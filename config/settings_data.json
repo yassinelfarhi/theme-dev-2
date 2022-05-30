@@ -550,7 +550,16 @@
           "1653929841f8c5f97c-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "gandoura-men",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          },
+          "5e3c1462-c9a3-4384-8b9a-e06bc6f3ca5f": {
+            "type": "collection",
+            "settings": {
+              "collection": "jacket-men",
               "title": "",
               "grid_items_count": 8,
               "button_text": "View all products"
@@ -558,7 +567,8 @@
           }
         },
         "block_order": [
-          "1653929841f8c5f97c-0"
+          "1653929841f8c5f97c-0",
+          "5e3c1462-c9a3-4384-8b9a-e06bc6f3ca5f"
         ],
         "settings": {
           "title": "MENS CLOTHING",
