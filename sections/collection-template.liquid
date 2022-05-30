@@ -225,38 +225,21 @@
         Implementation note: the filters can be displayed in two different ways: in a sidebar menu, always visible, or in a drawer. Due to that, we are
         setting the general code here, and then we will output it twice.
         {%- endcomment -%}
-         {% comment %} {% if collection.title == "clothing accessory" %}
+         {% if collection.title == "clothing accesory" %}
         
         {%- assign quick_links = linklists.clothing-accesory -%}
-         {% else if %}
+         {% else %}
          {% comment %} {%- assign quick_links = linklists[section.settings.filter_menu] -%} {% endcomment %}
-         {% comment %} {%- assign quick_links = linklists.clothing-accesory -%}
-         {% endif %} {% endcomment %} 
-
-         {% case collection.title %}
-          {% when "clothing accessory" %}
-            {%- assign quick_links = linklists.clothing-accesory -%}
-          {% when "outfits" %}
-            {%- assign quick_links = linklists.outfits -%}
-          {% when "embroidery" %}
-            {%- assign quick_links = linklists.embroidery -%}  
-          {% else %}
-          {%- assign quick_links = linklists[section.settings.filter_menu] -%}
-
-        {% endcase %}
+         {%- assign quick_links = linklists.clothing-accesory -%}
+         {% endif %}
 
         
         {%- capture filters_content -%}
           {%- if quick_links != empty -%}
             <div class="Collapsible Collapsible--padded Collapsible--autoExpand">
-              {% comment %} <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
-                {{- quick_links.title | escape -}} <span class="Collapsible__Plus"></span>
-              </button> {% endcomment %}
-              
-
-                <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+              <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
                 Subcategories <span class="Collapsible__Plus"></span>
-              </button> 
+              </button>
 
               <div class="Collapsible__Inner">
                 <div class="Collapsible__Content">
