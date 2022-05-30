@@ -564,11 +564,21 @@
               "grid_items_count": 8,
               "button_text": "View all products"
             }
+          },
+          "6658ca2f-45c8-4fa8-9ea4-3ac5018023bf": {
+            "type": "collection",
+            "settings": {
+              "collection": "jellaba-men",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
           }
         },
         "block_order": [
           "1653929841f8c5f97c-0",
-          "5e3c1462-c9a3-4384-8b9a-e06bc6f3ca5f"
+          "5e3c1462-c9a3-4384-8b9a-e06bc6f3ca5f",
+          "6658ca2f-45c8-4fa8-9ea4-3ac5018023bf"
         ],
         "settings": {
           "title": "MENS CLOTHING",
