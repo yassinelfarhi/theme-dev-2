@@ -227,6 +227,7 @@
         {%- endcomment -%}
     
     
+    {% comment %}
       {% case collection.title %}
           {% when "CLOTHING ACCESSORY" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
@@ -239,6 +240,8 @@
           {% else %}
              
         {% endcase %}
+    
+        {% endcomment %}
 
         
         {%- capture filters_content -%}
