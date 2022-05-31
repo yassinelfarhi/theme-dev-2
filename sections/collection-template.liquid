@@ -227,13 +227,15 @@
         {%- endcomment -%}
 
 
-        {% case collection.title %}
-          {% when "clothing accesory" %}
+        {% case collection.handle %}
+          {% when "clothing-accesory" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
           {% when "outfits" %}
             {%- assign quick_links = linklists.outfits -%}
           {% when "men" %}
             {%- assign quick_links = linklists.men -%}
+          {% when "kids" %}
+              {%- assign quick_links = linklists.kids -%}  
           {% else %}
              
         {% endcase %}
