@@ -424,7 +424,7 @@
         {%- endif -%}
 
         <div class="CollectionInner">
-          {%- if show_filters and section.settings.filter_position == 'sidebar' -%}
+          {%- if show_filters and section.settings.filter_position == 'sidebar' and quick_links != empty  -%}
             <div class="CollectionInner__Sidebar {% if collection_toolbar != blank and section.settings.toolbar_position == 'top' %}CollectionInner__Sidebar--withTopToolbar{% endif %} hidden-pocket">
               <div class="CollectionFilters">
                 {{ filters_content }}
