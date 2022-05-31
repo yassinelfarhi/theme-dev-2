@@ -171,10 +171,11 @@
           </div>
         {%- endif -%}
 
-        {% comment %}
+    
         {%- capture flickity_options -%}
         {
           "prevNextButtons": false,
+           "groupCells": true,
           "freeScroll": true,
           "pageDots": {% if image_count > 1 %}true{% else %}false{% endif %},
           "adaptiveHeight": true,
@@ -185,7 +186,7 @@
         }
         
         {%- endcapture -%}
-        {% endcomment %}
+      
 
         <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
           {{ slideshow_images }}
