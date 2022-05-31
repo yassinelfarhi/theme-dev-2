@@ -171,6 +171,7 @@
           </div>
         {%- endif -%}
 
+        {% comment %}
         {%- capture flickity_options -%}
         {
           "prevNextButtons": false,
@@ -182,7 +183,9 @@
           "dragThreshold": 8,
           "initialIndex": {{ initial_image_index }}
         }
+        
         {%- endcapture -%}
+        {% endcomment %}
 
         <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
           {{ slideshow_images }}
