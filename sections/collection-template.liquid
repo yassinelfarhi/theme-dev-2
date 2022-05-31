@@ -228,8 +228,8 @@
     
     
    
-      {% case collection.title %}
-          {% when "/clothing-accessory" %}
+      {% case collection.handle %}
+          {% when "clothing-accessory" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
           {% when "outfits" %}
             {%- assign quick_links = linklists.outfits -%}
