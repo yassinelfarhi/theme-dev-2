@@ -165,7 +165,7 @@
       {%- endcase -%}
 
       {%- assign show_filters = false -%}
-      {%- assign quick_links = linklists[section.settings.filter_menu] -%}
+     {% comment %} {%- assign quick_links = linklists[section.settings.filter_menu] -%} {% endcomment %}
 
       {%- if quick_links != blank or has_visible_tags -%}
         {%- assign show_filters = true -%}
