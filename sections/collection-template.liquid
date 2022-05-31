@@ -231,14 +231,16 @@
       {% case collection.handle %}
           {% when "clothing-accessory","babouche", "tarbouches", "mejdoule" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
+    
+          {% when "embroidery" %}
+              {%- assign quick_links = linklists.embroidery -%} 
           {% when "outfits","jupe","pantalon","jacket","chemise","gilet","papillion","gandoura","fokia","jabadour"%}
             {%- assign quick_links = linklists.outfits -%}
           {% when "men","jellaba-men","gandoura-men","jacket-men" %}
             {%- assign quick_links = linklists.men -%}
           {% when "kids" %}
               {%- assign quick_links = linklists.kids -%}  
-          {% when "embroidery" %}
-              {%- assign quick_links = linklists.embroidery -%} 
+       
           {% else %}
              
         {% endcase %}
