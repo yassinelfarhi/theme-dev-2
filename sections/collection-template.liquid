@@ -226,10 +226,12 @@
         setting the general code here, and then we will output it twice.
         {%- endcomment -%}
     
+    {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
      COLLECTION MENU
       --------------------------------------------------------------------------------------------------------------------
-   
+         {%- endcomment -%}
+    
       {% case collection.handle %}
           {% when "clothing-accessory","babouche", "tarbouches", "mejdoule" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
