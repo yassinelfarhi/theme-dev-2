@@ -14,13 +14,6 @@ for size, we use it to display a size chart (if applicable)
 {% render 'product-modal-size' %}
 
 
-
-
-
-
-
-
-
 {%- form 'product', product, class: 'ProductForm' -%}
   <div class="ProductForm__Variants">
     {%- unless product.has_only_default_variant -%}
@@ -262,6 +255,17 @@ for size, we use it to display a size chart (if applicable)
     {{ form | payment_button }}
   {%- endif -%}
 {%- endform -%}
+
+<label>
+  Color
+  <select>
+    {% for color_option in product.options_by_name['Color'].values %}
+      <option>{{ color_option }}</option>
+    {% endfor %}
+  </select>
+</label>
+
+
 
 {%- if size_chart_page != empty -%}
   {%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper positioning){%- endcomment -%}
