@@ -209,7 +209,7 @@
           "show_layout_switch": true,
           "toolbar_position": "top",
           "filter_position": "sidebar",
-          "filter_mode": "hidden",
+          "filter_mode": "tag",
           "show_filter_color_swatch": true,
           "filter_menu": "main-menu",
           "grid_items_per_page": 16,
