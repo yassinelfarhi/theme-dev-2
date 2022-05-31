@@ -30,6 +30,7 @@ for size, we use it to display a size chart (if applicable)
     {% if option.name == "Color" %}
     
     <div class="">
+        <span class="ProductForm__ColorSwatch {% if downcase_value == 'white' %}ProductForm__ColorSwatch--white{% endif %}" style="background-color: {{ option.selected_value | replace: ' ', '' }}; background-image: url({{ option.selected_value | handle | append: '.png' | asset_url }})"></span>
     <span class="span-color">Color : </span>
     <span class="span-color-2"> {{ option.selected_value }} </span>
       
