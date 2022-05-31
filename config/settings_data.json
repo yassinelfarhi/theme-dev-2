@@ -248,7 +248,7 @@
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
           "show_payment_button": true,
-          "image_size": "medium",
+          "image_size": "small",
           "enable_image_zoom": true,
           "show_thumbnails": true,
           "tab_page_1_handle": "care-guide",
