@@ -225,9 +225,9 @@
         Implementation note: the filters can be displayed in two different ways: in a sidebar menu, always visible, or in a drawer. Due to that, we are
         setting the general code here, and then we will output it twice.
         {%- endcomment -%}
-
-
-        {% case collection.handle %}
+    
+    
+      {% case collection.handle %}
           {% when "clothing-accesory" %}
             {%- assign quick_links = linklists.clothing-accesory -%}
           {% when "outfits" %}
@@ -239,18 +239,6 @@
           {% else %}
              
         {% endcase %}
-
-
-         {% comment %} {% if collection.title == "clothing accesory" %}
-        
-
-          
-      
-
-         
-         {% elsif collection.title == "clothing accesory" %}
-         {% comment %} {%- assign quick_links = linklists[section.settings.filter_menu] -%} {% endcomment %}
-      
 
         
         {%- capture filters_content -%}
@@ -375,11 +363,7 @@
             <div class="Drawer__Main" data-scrollable>
               {{ filters_content }}
 
-             {% comment %} {% for subcol in collection.metafieldscollection.my_fields.subcollections %}
-
-                {{ subcol }}
-
-             {% endfor %} {% endcomment %}
+        
             </div>
 
             <div class="Drawer__Footer Drawer__Footer--padded" data-drawer-animated-bottom>
