@@ -40,7 +40,7 @@
     "product_info_alignment": "center",
     "product_image_size": "natural",
     "product_list_horizontal_spacing": "medium",
-    "product_list_vertical_spacing": "small",
+    "product_list_vertical_spacing": "extra_small",
     "cart_type": "drawer",
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
