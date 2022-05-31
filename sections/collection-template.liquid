@@ -259,9 +259,12 @@
                 <div class="Collapsible__Content">
                   <ul class="Linklist">
                     {%- for link in quick_links.links -%}
+                      {% for sub_link in link.links %}
                       <li class="Linklist__Item {% if link.active %}is-selected{% endif %}">
-                        <a href="{{ link.url }}" class="Link Link--primary Text--subdued {% if link.active %}is-active{% endif %}">{{ link.title | escape }}</a>
+                        <a href="{{ sub_link.url }}" class="Link Link--primary Text--subdued {% if sub_link.active %}is-active{% endif %}">{{ sub_link.title | escape }}</a>
                       </li>
+                    
+                       {% endfor %}
                     {%- endfor -%}
                   </ul>
                 </div>
