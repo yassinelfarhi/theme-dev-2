@@ -53,10 +53,12 @@ display:none !important;
 display:none !important;
 }
 
-
-.ProductMeta .pm-mobile{
+@media (max-width: 600px){
+  
+  .ProductMeta .pm-mobile{
 
   font-size: 17px !important;
   text-transform: capitalize;
+}
 }
 
