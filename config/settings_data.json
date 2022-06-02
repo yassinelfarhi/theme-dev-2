@@ -140,6 +140,7 @@
       },
       "slideshow": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
@@ -252,6 +253,7 @@
       },
       "1595363175996": {
         "type": "text-with-image",
+        "disabled": true,
         "settings": {
           "subheading": "OUR STORY",
           "title": "OUR STORY",
@@ -271,6 +273,7 @@
       },
       "1647257646e41e6000": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1647257646e41e6000-0": {
             "type": "collection",
@@ -307,6 +310,7 @@
       },
       "164726877523ac64dd": {
         "type": "collection-list",
+        "disabled": true,
         "blocks": {
           "164726877523ac64dd-0": {
             "type": "collection",
@@ -363,6 +367,7 @@
       },
       "164727239627716db9": {
         "type": "featured-product",
+        "disabled": true,
         "settings": {
           "subheading": "",
           "title": "Featured product",
@@ -394,6 +399,7 @@
       },
       "16500339584f0cae51": {
         "type": "instafeed",
+        "disabled": true,
         "settings": {
           "heading_font": "helvetica_n4",
           "heading_size": 20,
@@ -403,6 +409,7 @@
       },
       "1650102164bbe575b4": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1650102164bbe575b4-0": {
             "type": "collection",
@@ -463,6 +470,7 @@
       },
       "1650796917351910cb": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1650796917351910cb-0": {
             "type": "collection",
@@ -488,6 +496,7 @@
       },
       "16507996195ac63b26": {
         "type": "blog-posts",
+        "disabled": true,
         "blocks": {
           "16507996195ac63b26-0": {
             "type": "blog",
@@ -516,6 +525,7 @@
       },
       "1653929841f8c5f97c": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1653929841f8c5f97c-0": {
             "type": "collection",
@@ -558,6 +568,19 @@
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
         }
+      },
+      "1654207307491e1871": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 30,
+          "subheading": "Maison du caftan",
+          "title": "",
+          "content": "<p>Collections<\/p>"
+        }
       }
     },
     "content_for_index": [
@@ -571,7 +594,8 @@
       "16500339584f0cae51",
       "1650796917351910cb",
       "1653929841f8c5f97c",
-      "16507996195ac63b26"
+      "16507996195ac63b26",
+      "1654207307491e1871"
     ]
   },
   "presets": {
