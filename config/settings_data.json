@@ -250,7 +250,7 @@
           "show_payment_button": true,
           "image_size": "small",
           "enable_image_zoom": true,
-          "show_thumbnails": true,
+          "show_thumbnails": false,
           "tab_page_1_handle": "care-guide",
           "tab_page_2_handle": "size-guide",
           "reviews_enabled": true,
