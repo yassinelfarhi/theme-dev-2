@@ -141,43 +141,15 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/slide-11.jpg",
-              "apply_overlay": false,
-              "content_position": "middleCenter",
-              "subheading": "",
-              "title": "",
-              "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          },
-          "67d89856-11e3-49f1-8626-f9cf5fb836cd": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/slide-22.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "NEW COLLECTION",
-              "title": "CAFTAN",
-              "button_1_text": "SEE MORE",
-              "button_1_link": "shopify:\/\/collections\/caftan",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          },
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/slide-3.webp",
+              "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "NEW COLLECTION",
+              "subheading": "COLLECTIONs",
               "title": "takchita",
-              "button_1_text": "SEE MORE",
+              "button_1_text": "Discover",
               "button_1_link": "",
               "button_2_text": "",
               "button_2_link": ""
@@ -185,8 +157,6 @@
           }
         },
         "block_order": [
-          "slide-1",
-          "67d89856-11e3-49f1-8626-f9cf5fb836cd",
           "400d5318-4ae5-42e7-84e1-6365340f36ec"
         ],
         "settings": {
