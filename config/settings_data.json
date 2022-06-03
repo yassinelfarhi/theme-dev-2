@@ -610,7 +610,7 @@
               "content_position": "bottomLeft",
               "subheading": "Slide title",
               "title": "Tell your story",
-              "button_1_text": "",
+              "button_1_text": "ONE-OF- A-KIND",
               "button_1_link": "",
               "button_2_text": "",
               "button_2_link": ""
@@ -632,6 +632,7 @@
     },
     "content_for_index": [
       "slideshow",
+      "165426606304b5fb5b",
       "1647257646e41e6000",
       "164726877523ac64dd",
       "164727239627716db9",
@@ -642,8 +643,7 @@
       "1650796917351910cb",
       "1653929841f8c5f97c",
       "16507996195ac63b26",
-      "1654207307491e1871",
-      "165426606304b5fb5b"
+      "1654207307491e1871"
     ]
   },
   "presets": {
