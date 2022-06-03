@@ -157,7 +157,6 @@
       },
       "slideshow": {
         "type": "slideshow",
-        "disabled": true,
         "blocks": {
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
@@ -588,6 +587,7 @@
       },
       "1654207307491e1871": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb.jpg",
@@ -597,6 +597,36 @@
           "subheading": "Maison du caftan",
           "title": "",
           "content": "<p>Collections<\/p>"
+        }
+      },
+      "165426606304b5fb5b": {
+        "type": "slideshow",
+        "blocks": {
+          "165426606304b5fb5b-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "165426606304b5fb5b-1"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
         }
       }
     },
@@ -612,7 +642,8 @@
       "1650796917351910cb",
       "1653929841f8c5f97c",
       "16507996195ac63b26",
-      "1654207307491e1871"
+      "1654207307491e1871",
+      "165426606304b5fb5b"
     ]
   },
   "presets": {
