@@ -107,14 +107,15 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e": {
+          "b4ed2642-49b1-4354-87d8-e011473e6f5e": {
             "type": "links",
             "settings": {
-              "menu": "policies"
+              "menu": "main-menu-2"
             }
           },
           "19829f78-8326-4064-a07b-dfeb7efd4480": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "Customer Support",
               "content": "<p>Contact us 24\/7<\/p><p>maisonducaftanmarrakech@gmail.com  <\/p><p>+212 5 24 44 10 51<\/p>",
@@ -132,17 +133,24 @@
           "67d07561-8d23-4077-9f60-8598f84cb8c7": {
             "type": "text",
             "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "title": "OPENING HOURS",
+              "content": "<p>Mon - Fri, 9am - 6pm<\/p><p>Saturday, 9am - 6pm<\/p><p>Sunday, 10am - 6pm<\/p>",
               "show_social_media": false
+            }
+          },
+          "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e": {
+            "type": "links",
+            "settings": {
+              "menu": "policies"
             }
           }
         },
         "block_order": [
-          "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e",
+          "b4ed2642-49b1-4354-87d8-e011473e6f5e",
           "19829f78-8326-4064-a07b-dfeb7efd4480",
           "7eb52ee6-8321-4d32-8769-778a5f83e4cc",
-          "67d07561-8d23-4077-9f60-8598f84cb8c7"
+          "67d07561-8d23-4077-9f60-8598f84cb8c7",
+          "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e"
         ],
         "settings": {
           "show_payment_methods": true
