@@ -113,9 +113,13 @@ border-top:1px solid #333;
   color:#fff !important;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 1762px) and (min-width: 1400px){
 
   .footer .container{
   padding:0 35px !important;
   }
+  .Footer__Block--text{
+    flex-basis: 376px !important;
+  }
+  
 }
