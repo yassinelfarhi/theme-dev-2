@@ -123,16 +123,26 @@
           },
           "7eb52ee6-8321-4d32-8769-778a5f83e4cc": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "title": "Newsletter",
               "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+            }
+          },
+          "67d07561-8d23-4077-9f60-8598f84cb8c7": {
+            "type": "text",
+            "settings": {
+              "title": "About the shop",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "show_social_media": false
             }
           }
         },
         "block_order": [
           "05a1bcd2-c03f-45a7-a83e-cacab1f4e59e",
           "19829f78-8326-4064-a07b-dfeb7efd4480",
-          "7eb52ee6-8321-4d32-8769-778a5f83e4cc"
+          "7eb52ee6-8321-4d32-8769-778a5f83e4cc",
+          "67d07561-8d23-4077-9f60-8598f84cb8c7"
         ],
         "settings": {
           "show_payment_methods": true
@@ -576,7 +586,7 @@
           "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb.jpg",
           "text_color": "#ffffff",
           "overlay_color": "#000000",
-          "overlay_opacity": 30,
+          "overlay_opacity": 20,
           "subheading": "Maison du caftan",
           "title": "",
           "content": "<p>Collections<\/p>"
