@@ -69,6 +69,7 @@
           </div>
            
         {%- endfor -%}
+         {% comment %}
          <div class="Footer__Block footer-block">
            <div class="footer-map-block">
            <p class="Footer__Title Heading u-h6">OPENING HOURS</p>
@@ -82,6 +83,8 @@
              </div> 
                 <div class="footer-map-block"> <img width="300px" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/map2.jpg?v=1652717569" loading="lazy"></div> 
           </div>  
+        
+        {% endcomment %}
       </div>
     {%- endif -%}
 
@@ -91,7 +94,7 @@
      
                   {% include 'social-media', class: 'Footer__Social', spacing: 'loose' %}
                
-        <a href="{{ shop.url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }} ALL RIGHTS RESERVED</a>
+        <a href="{{ shop.url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }} ALL RIGHTS RESERVED sabah</a>
 
         {%- capture maestrooo_link -%}<a href="https://www.maestrooo.com" class="Link Link--primary" target="_blank" rel="noopener">Maestrooo</a>{%- endcapture -%}
       </div>
