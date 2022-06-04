@@ -639,10 +639,8 @@
         "settings": {
           "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
           "subheading": "",
-          "txt_button": "View more",
           "title": "Tell your story",
-          "content": "<p>ONE-OF-<br\/>A-KIND<\/p>",
-          "featured_product_handle": ""
+          "content": "<p>ONE-OF-A-KIND<\/p>"
         }
       },
       "1654338405bbd6b401": {
@@ -651,10 +649,8 @@
         "settings": {
           "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
           "subheading": "",
-          "txt_button": "View more",
           "title": "Tell your story",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "featured_product_handle": ""
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
         }
       },
       "16543384088d302472": {
