@@ -161,7 +161,7 @@
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PQ0A5933.jpg",
+              "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "COLLECTIONs",
@@ -644,18 +644,50 @@
       },
       "1654338405bbd6b401": {
         "type": "parallax-featured-product",
+        "disabled": true,
         "settings": {
           "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
           "txt_button": "View more",
           "featured_product_handle": ""
         }
+      },
+      "16543384088d302472": {
+        "type": "slideshow",
+        "blocks": {
+          "16543384088d302472-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "title": "Tell your story",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16543384088d302472-0"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
       }
     },
     "content_for_index": [
-      "165433835702d5f41f",
       "slideshow",
-      "1654338405bbd6b401",
+      "16543384088d302472",
+      "165433835702d5f41f",
       "165426606304b5fb5b",
+      "1654338405bbd6b401",
       "1647257646e41e6000",
       "164726877523ac64dd",
       "164727239627716db9",
