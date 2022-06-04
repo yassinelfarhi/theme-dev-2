@@ -21,83 +21,44 @@
     </div> 
  </div> 
  <!-- /featured --> 
-   
-{% schema %}
-{
-  "name": "Image with text overlay",
-  "settings": [
-    {
-      "type": "select",
-      "id": "section_size",
-      "label": "Section size",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "normal",
-          "label": "Normal"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        }
-      ],
-      "default": "large"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image",
-      "info": "1500 x 800px jpg recommended"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "overlay_color",
-      "label": "Overlay",
-      "default": "#000000"
-    },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Overlay opacity",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "default": 30
-    },
-    {
+
+
+
+ {% schema %} 
+ { 
+   "name": "Featured Product Parallax", 
+   "settings": [ 
+     { 
+       "type": "header", 
+       "content": "Parallax featured product" 
+     }, 
+     { 
+       "type": "image_picker", 
+       "id": "img_product", 
+       "label": "Section image" 
+     }, 
+ {
       "type": "text",
       "id": "subheading",
       "label": "Sub-heading"
     },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Tell your story"
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Text",
-      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-    }
-  ],
-  "presets": [
-    {
-      "category": "Image",
-      "name": "Image with text (overlay)",
-      "settings": {}
-    }
-  ]
-}
-{% endschema %} 
+     { 
+       "type": "text", 
+       "id": "txt_button", 
+       "label": "Button text", 
+       "default": "View more" 
+     }, 
+     { 
+       "type": "product", 
+       "id": "featured_product_handle", 
+       "label": "Select product" 
+     } 
+   ], 
+   "presets": [ 
+     { 
+       "name": "Featured Product Parallax", 
+       "category": "Products" 
+     } 
+   ] 
+ } 
+ {% endschema %} 
