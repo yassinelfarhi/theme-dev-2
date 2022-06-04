@@ -588,6 +588,7 @@
       },
       "1654207307491e1871": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
@@ -712,9 +713,9 @@
       }
     },
     "content_for_index": [
+      "1654348092adab4172",
       "1654207307491e1871",
       "165433835702d5f41f",
-      "1654348092adab4172",
       "165433981428eed3ca",
       "slideshow",
       "16543384088d302472",
