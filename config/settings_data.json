@@ -653,6 +653,7 @@
       },
       "16543384088d302472": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "16543384088d302472-0": {
             "type": "image",
@@ -680,13 +681,27 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "165433981428eed3ca": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/PQ0A5933.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 30,
+          "subheading": "",
+          "title": "Tell your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        }
       }
     },
     "content_for_index": [
       "1654207307491e1871",
+      "165433835702d5f41f",
+      "165433981428eed3ca",
       "slideshow",
       "16543384088d302472",
-      "165433835702d5f41f",
       "165426606304b5fb5b",
       "1654338405bbd6b401",
       "1647257646e41e6000",
