@@ -157,6 +157,7 @@
       },
       "slideshow": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
@@ -587,7 +588,6 @@
       },
       "1654207307491e1871": {
         "type": "image-with-text-overlay",
-        "disabled": true,
         "settings": {
           "section_size": "large",
           "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb.jpg",
@@ -683,6 +683,7 @@
       }
     },
     "content_for_index": [
+      "1654207307491e1871",
       "slideshow",
       "16543384088d302472",
       "165433835702d5f41f",
@@ -697,8 +698,7 @@
       "16500339584f0cae51",
       "1650796917351910cb",
       "1653929841f8c5f97c",
-      "16507996195ac63b26",
-      "1654207307491e1871"
+      "16507996195ac63b26"
     ]
   },
   "presets": {
