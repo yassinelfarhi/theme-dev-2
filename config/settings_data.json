@@ -161,7 +161,7 @@
           "400d5318-4ae5-42e7-84e1-6365340f36ec": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
+              "image": "shopify:\/\/shop_images\/PQ0A5933.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "COLLECTIONs",
@@ -178,7 +178,7 @@
         ],
         "settings": {
           "show_fullscreen": false,
-          "show_arrow": true,
+          "show_arrow": false,
           "autoplay": true,
           "cycle_speed": 4,
           "text_color": "#ffffff",
@@ -605,7 +605,7 @@
           "165426606304b5fb5b-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
+              "image": "shopify:\/\/shop_images\/PQ0A5933.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Slide title",
@@ -628,10 +628,33 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "parallax-slider": {
+        "type": "parallax-slider",
+        "settings": {
+        }
+      },
+      "165433835702d5f41f": {
+        "type": "parallax-featured-product",
+        "settings": {
+          "img_product": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
+          "txt_button": "View more",
+          "featured_product_handle": ""
+        }
+      },
+      "1654338405bbd6b401": {
+        "type": "parallax-featured-product",
+        "settings": {
+          "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
+          "txt_button": "View more",
+          "featured_product_handle": ""
+        }
       }
     },
     "content_for_index": [
+      "165433835702d5f41f",
       "slideshow",
+      "1654338405bbd6b401",
       "165426606304b5fb5b",
       "1647257646e41e6000",
       "164726877523ac64dd",
