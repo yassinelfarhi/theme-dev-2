@@ -638,7 +638,10 @@
         "type": "parallax-featured-product",
         "settings": {
           "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
+          "subheading": "",
           "txt_button": "View more",
+          "title": "Tell your story",
+          "content": "<p>ONE-OF-<br\/>A-KIND<\/p>",
           "featured_product_handle": ""
         }
       },
@@ -647,7 +650,10 @@
         "disabled": true,
         "settings": {
           "img_product": "shopify:\/\/shop_images\/PQ0A6373-edit.jpg",
+          "subheading": "",
           "txt_button": "View more",
+          "title": "Tell your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
           "featured_product_handle": ""
         }
       },
