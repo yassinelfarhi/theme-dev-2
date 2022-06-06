@@ -155,3 +155,54 @@ margin-bottom:0;
 */
 
 
+body {
+	margin: 0;
+}
+
+.container{
+	display:none;
+}
+
+.parallax {
+	min-height: 600px;
+	margin: 0;
+	
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+p{
+	background-color: white;
+	color:Grey;
+	padding: 100px;
+	margin: 0;
+	font-size: 50px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 16px;
+}
+
+.fondo1{
+	background-image: url("https://fondosmil.com/fondo/7375.jpg");
+}
+
+.fondo2{
+	background-image: url("http://cdn.wallpapersafari.com/22/85/kwGbHB.jpg");
+	background-position: 50% 200px;
+}
+
+.fondo3{
+	background-image: url("https://wallpaperaccess.com/full/1124086.jpg");
+	background-position: 50% 400px;
+}
+
+.fondo4{
+	background-image: url("https://i.pinimg.com/originals/35/fd/82/35fd826fd7bb4cae8d2d62cba7b6f643.jpg");
+	background-position: 50% 600px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

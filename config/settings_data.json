@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<div id=\"header\">\n  <div class=\"center\" id=\"headerc\">\n    <div class=\"middle\">\n      <h1>Sky<\/h1>\n      <span>Fixed header and parallax scrolling background with a rhombus indicator<\/span>\n    <\/div>\n  <\/div>\n<\/div>\n\n<div id=\"pageHr\"> \n  <i><i>↓<\/i><\/i>\n<\/div>\n\n<div id=\"page\">\n\t<a href=\"https:\/\/commons.wikimedia.org\/wiki\/File:Cloud_sky_over_Brest.jpg\">This Photo was taken by Luca Lorenzi<\/a>\n<\/div>"
+          "html": "<div class=\"container\">\n\t<div class=\"parallax fondo1\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo2\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo3\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo4\">\n\t<\/div>\n<\/div>"
         }
       }
     },
