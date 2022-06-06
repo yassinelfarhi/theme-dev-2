@@ -154,55 +154,113 @@ margin-bottom:0;
 }
 */
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-body {
-	margin: 0;
+// ------------- MIXINS ------------- //
+@mixin transition($time, $property: all, $easing: ease-in) {
+    transition: $property $time $easing;
 }
 
-.container{
-	display:none;
+// ------------- VARIABLES ------------- //
+$parallax-offset: 30vh;
+$content-offset: 40vh;
+$transition-speed: 1.2s;
+$slide-number: 3;
+
+html, body {
+  overflow: hidden;
 }
 
-.parallax {
-	min-height: 600px;
-	margin: 0;
-	
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  height: 100vh + $parallax-offset;
+  position: fixed;
+  width: 100%;
+  transform: translateY($parallax-offset);
+  @include transition($transition-speed, all, cubic-bezier(0.22, 0.44, 0, 1));
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+  }
+  &:first-child {
+    background-image: url(https://i.postimg.cc/kXq9Qmnj/bgd1.jpg);
+    transform: translateY(-$parallax-offset / 2);
+    .content-wrapper {
+      transform: translateY($parallax-offset /2);
+    }
+  }
+  &:nth-child(2) {
+    background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
+  }
 }
 
-p{
-	background-color: white;
-	color:Grey;
-	padding: 100px;
-	margin: 0;
-	font-size: 50px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 16px;
+/* Set stacking context of slides */
+@for $i from 1 to ($slide-number + 1) {
+    .background:nth-child(#{$i}) {
+        z-index: ($slide-number + 1) - $i; 
+    }
 }
 
-.fondo1{
-	background-image: url("https://fondosmil.com/fondo/7375.jpg");
+.content {
+  &-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  transform: translateY($content-offset);
+  will-change: transform;
+  backface-visibility: hidden;
+  @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
+  }
+  &-title {
+    font-size: 12vh;
+    line-height: 1.4;
+  }
 }
 
-.fondo2{
-	background-image: url("http://cdn.wallpapersafari.com/22/85/kwGbHB.jpg");
-	background-position: 50% 200px;
+// ------------- SET TRANSFORM VALUES ------------- //
+
+.background.up-scroll {
+  transform: translate3d(0,-$parallax-offset / 2,0);
+  .content-wrapper {
+    transform: translateY($parallax-offset / 2);
+  }
+  + .background {
+    transform: translate3d(0,$parallax-offset,0);
+      .content-wrapper {
+        transform: translateY($parallax-offset);
+      }
+    }
 }
 
-.fondo3{
-	background-image: url("https://wallpaperaccess.com/full/1124086.jpg");
-	background-position: 50% 400px;
-}
-
-.fondo4{
-	background-image: url("https://i.pinimg.com/originals/35/fd/82/35fd826fd7bb4cae8d2d62cba7b6f643.jpg");
-	background-position: 50% 600px;
-}
-
-::-webkit-scrollbar { 
-    display: none; 
+.background.down-scroll {
+  transform: translate3d(0,-(100vh + $parallax-offset),0);
+  .content-wrapper {
+    transform: translateY($content-offset);
+  }
+  + .background:not(.down-scroll) {
+    transform: translate3d(0,-$parallax-offset / 2,0);
+      .content-wrapper {
+        transform: translateY($parallax-offset / 2);
+      }
+  }
 }
