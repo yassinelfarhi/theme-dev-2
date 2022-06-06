@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1005\" data-speed=\"-1\" class=\"img-parallax\">\n  <h2>Speed -1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1067\" data-speed=\"1\" class=\"img-parallax\">\n  <h2> Speed 1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?gravity=center\" data-speed=\"-0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1080\" data-speed=\"0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?random\" data-speed=\"-0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.75<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?blur\" data-speed=\"0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.75<\/h2>\n<\/div>"
+          "html": "<div id=\"header\">\n  <div class=\"center\" id=\"headerc\">\n    <div class=\"middle\">\n      <h1>Sky<\/h1>\n      <span>Fixed header and parallax scrolling background with a rhombus indicator<\/span>\n    <\/div>\n  <\/div>\n<\/div>\n\n<div id=\"pageHr\"> \n  <i><i>↓<\/i><\/i>\n<\/div>\n\n<div id=\"page\">\n\t<a href=\"https:\/\/commons.wikimedia.org\/wiki\/File:Cloud_sky_over_Brest.jpg\">This Photo was taken by Luca Lorenzi<\/a>\n<\/div>"
         }
       }
     },
