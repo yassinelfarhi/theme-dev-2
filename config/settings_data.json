@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<div class=\"container\">\n\t<div class=\"parallax fondo1\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo2\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo3\"><\/div>\n\t<p>\n\t\tParallax Test\n\t<\/p>\n\t<div class=\"parallax fondo4\">\n\t<\/div>\n<\/div>"
+          "html": "<div class=\"container\">\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Full Page Parallax Effect<\/p>\n      <p class=\"content-subtitle\">Scroll down and up to see the effect!<\/p>\n    <\/div>\n  <\/section>\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Cras lacinia non eros nec semper.<\/p>\n      <p class=\"content-subtitle\">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.<\/p>\n    <\/div>\n  <\/section>\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Etiam consequat lectus.<\/p>\n      <p class=\"content-subtitle\">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.<\/p>\n    <\/div>\n  <\/section>\n<\/div>"
         }
       }
     },
