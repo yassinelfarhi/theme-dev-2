@@ -710,6 +710,14 @@
           "title": "",
           "content": "<p>new in women<\/p>"
         }
+      },
+      "1654513237f0736781": {
+        "type": "custom-html",
+        "settings": {
+          "subheading": "Sub-heading",
+          "title": "Your HTML",
+          "html": "<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1005\" data-speed=\"-1\" class=\"img-parallax\">\n  <h2>Parallax Speed -1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1067\" data-speed=\"1\" class=\"img-parallax\">\n  <h2>Parallax Speed 1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?gravity=center\" data-speed=\"-0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1080\" data-speed=\"0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?random\" data-speed=\"-0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.75<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?blur\" data-speed=\"0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.75<\/h2>\n<\/div>"
+        }
       }
     },
     "content_for_index": [
@@ -730,7 +738,8 @@
       "16500339584f0cae51",
       "1650796917351910cb",
       "1653929841f8c5f97c",
-      "16507996195ac63b26"
+      "16507996195ac63b26",
+      "1654513237f0736781"
     ]
   },
   "presets": {
