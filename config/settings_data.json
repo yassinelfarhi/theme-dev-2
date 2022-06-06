@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<main>\n  <section class=\"no-parallax\">\n    <h1>Fun fact:<\/h1>\n  <\/section>\n  <section class=\"parallax bg\">\n    <h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!<\/h1>\n  <\/section>\n  <section class=\"no-parallax\">\n    <h1>Have a nice day!<\/h1>\n  <\/section>\n<\/main>"
+          "html": "<main>\n  <header>\n    <div class=\"container\">\n      <i class=\"fas fa-5x fa-laugh\"><\/i>\n      <h3>Welcome<\/h3>\n      <p>Scroll to see how cool i am!<\/p>\n    <\/div>\n  <\/header>\n\n  <section>\n    <h3>Cool like you<\/h3>\n  <\/section>\n<\/main>"
         }
       }
     },
