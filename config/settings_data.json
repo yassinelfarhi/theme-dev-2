@@ -602,6 +602,7 @@
       },
       "165426606304b5fb5b": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "165426606304b5fb5b-1": {
             "type": "image",
@@ -688,6 +689,7 @@
       },
       "165433981428eed3ca": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "image": "shopify:\/\/shop_images\/PQ0A6374-edit_MODnb_5fe0ceaa-ab0b-4429-94e2-fa9667b54690.jpg",
@@ -701,6 +703,7 @@
       },
       "1654348092adab4172": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "section_size": "large",
           "text_color": "#ffffff",
@@ -714,8 +717,8 @@
       "1654513237f0736781": {
         "type": "custom-html",
         "settings": {
-          "subheading": "Sub-heading",
-          "title": "Your HTML",
+          "subheading": "",
+          "title": "",
           "html": "<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1005\" data-speed=\"-1\" class=\"img-parallax\">\n  <h2>Parallax Speed -1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1067\" data-speed=\"1\" class=\"img-parallax\">\n  <h2>Parallax Speed 1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?gravity=center\" data-speed=\"-0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1080\" data-speed=\"0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?random\" data-speed=\"-0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.75<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?blur\" data-speed=\"0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.75<\/h2>\n<\/div>"
         }
       }
