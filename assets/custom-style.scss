@@ -154,66 +154,65 @@ margin-bottom:0;
 }
 */
 
-body {
+@import url("https://fonts.googleapis.com/css?family=Courgette:400,700&display=swap");
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main {
+body {
+  background: linear-gradient(135deg, #0056a7, #165fa3, #477aaa);
+  font-family: "Courgette", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
+  color: #eee;
+  z-index: -1;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 section {
-  transform-style: preserve-3d;
-  position: relative;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  z-index: 1;
+  height: 100vh;
+  font-size: 5rem;
+  background: #fcdb6d;
+  color: #0056a7;
 }
 
-.no-parallax {
-  background-color: #111;
-  z-index: 999;
+.animate-me {
+  animation: bounceIn 3s ease-in-out;
 }
 
-section h1 {
-  text-align: center;
-  font-size: 4rem;
-  font-family: sans-serif;
-}
-
-.parallax h1 {
-  width: 60%;
-  font-size: 2rem;
-}
-
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
-}
-
-.bg::after {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://picsum.photos/1080/720");
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  section h1 {
-    font-size: 8rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  .parallax h1 {
-    font-size: 4rem;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
   }
 }
