@@ -154,113 +154,66 @@ margin-bottom:0;
 }
 */
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-// ------------- MIXINS ------------- //
-@mixin transition($time, $property: all, $easing: ease-in) {
-    transition: $property $time $easing;
+body {
+  margin: 0;
 }
 
-// ------------- VARIABLES ------------- //
-$parallax-offset: 30vh;
-$content-offset: 40vh;
-$transition-speed: 1.2s;
-$slide-number: 3;
-
-html, body {
-  overflow: hidden;
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 }
 
-.background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-  will-change: transform;
-  backface-visibility: hidden;
-  height: 100vh + $parallax-offset;
-  position: fixed;
-  width: 100%;
-  transform: translateY($parallax-offset);
-  @include transition($transition-speed, all, cubic-bezier(0.22, 0.44, 0, 1));
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.3);
-  }
-  &:first-child {
-    background-image: url(https://i.postimg.cc/kXq9Qmnj/bgd1.jpg);
-    transform: translateY(-$parallax-offset / 2);
-    .content-wrapper {
-      transform: translateY($parallax-offset /2);
-    }
-  }
-  &:nth-child(2) {
-    background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
-  }
-  &:nth-child(3) {
-    background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
-  }
-}
-
-/* Set stacking context of slides */
-@for $i from 1 to ($slide-number + 1) {
-    .background:nth-child(#{$i}) {
-        z-index: ($slide-number + 1) - $i; 
-    }
-}
-
-.content {
-  &-wrapper {
+section {
+  transform-style: preserve-3d;
+  position: relative;
   height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
+  color: white;
+}
+
+.no-parallax {
+  background-color: #111;
+  z-index: 999;
+}
+
+section h1 {
   text-align: center;
-  flex-flow: column nowrap;
-  color: #fff;
-  font-family: Montserrat;
-  text-transform: uppercase;
-  transform: translateY($content-offset);
-  will-change: transform;
-  backface-visibility: hidden;
-  @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
-  }
-  &-title {
-    font-size: 12vh;
-    line-height: 1.4;
-  }
+  font-size: 4rem;
+  font-family: sans-serif;
 }
 
-// ------------- SET TRANSFORM VALUES ------------- //
-
-.background.up-scroll {
-  transform: translate3d(0,-$parallax-offset / 2,0);
-  .content-wrapper {
-    transform: translateY($parallax-offset / 2);
-  }
-  + .background {
-    transform: translate3d(0,$parallax-offset,0);
-      .content-wrapper {
-        transform: translateY($parallax-offset);
-      }
-    }
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
 }
 
-.background.down-scroll {
-  transform: translate3d(0,-(100vh + $parallax-offset),0);
-  .content-wrapper {
-    transform: translateY($content-offset);
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://picsum.photos/1080/720");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  section h1 {
+    font-size: 8rem;
   }
-  + .background:not(.down-scroll) {
-    transform: translate3d(0,-$parallax-offset / 2,0);
-      .content-wrapper {
-        transform: translateY($parallax-offset / 2);
-      }
+  .parallax h1 {
+    font-size: 4rem;
   }
 }
