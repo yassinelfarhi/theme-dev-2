@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<div class=\"container\">\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Full Page Parallax Effect<\/p>\n      <p class=\"content-subtitle\">Scroll down and up to see the effect!<\/p>\n    <\/div>\n  <\/section>\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Cras lacinia non eros nec semper.<\/p>\n      <p class=\"content-subtitle\">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.<\/p>\n    <\/div>\n  <\/section>\n  <section class=\"background\">\n    <div class=\"content-wrapper\">\n      <p class=\"content-title\">Etiam consequat lectus.<\/p>\n      <p class=\"content-subtitle\">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.<\/p>\n    <\/div>\n  <\/section>\n<\/div>"
+          "html": "<main>\n  <section class=\"no-parallax\">\n    <h1>Fun fact:<\/h1>\n  <\/section>\n  <section class=\"parallax bg\">\n    <h1>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!<\/h1>\n  <\/section>\n  <section class=\"no-parallax\">\n    <h1>Have a nice day!<\/h1>\n  <\/section>\n<\/main>"
         }
       }
     },
