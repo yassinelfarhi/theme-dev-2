@@ -196,11 +196,11 @@
       <main id="main" role="main">
         {{ content_for_layout }}
       </main>
-      
+      {%- comment -%}
       {% if template.name == "index"  %}
       {% section 'trust-budges'  %}
       {% endif %}
-      
+        {%- endcomment -%}
       <button type="button" class="scroll-top">Go to Top</button>
       
       
