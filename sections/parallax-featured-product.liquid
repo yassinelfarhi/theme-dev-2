@@ -1,6 +1,6 @@
 {%- assign featured_product = all_products[section.settings.featured_product_handle] -%} 
  <div class="featured lazy" style="background: url({% if section.settings.img_product %}{{ section.settings.img_product | img_url: 'master' }}{% else %}https://via.placeholder.com/1200x800{% endif %}) 50% 70%;"> 
-    <div class="hura-parallax"> 
+    <div class="opacity-mask d-flex align-items-center"> 
        <div class="container margin_60"> 
           <div class="row justify-content-center justify-content-md-start"> 
             
