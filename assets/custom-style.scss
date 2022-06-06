@@ -209,9 +209,13 @@ section.module.parallax-3 {
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
-  }
+   font-size: 60pt;
+    margin-top: 0;
+    text-align: left;
+    font-family: 'WulkanDisplay-SemiBold';
 }
+  }
+
 
 .slide {
   opacity: 0;
