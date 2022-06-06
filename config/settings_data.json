@@ -719,7 +719,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "header\n  h1 CSS-Only Parallax Effect\nsection.section1\n  h1 Section w\/o parallax effect\nsection.section2\n  h1 Section w\/ parallax effect\n  \ndiv.author\n  a(\n    href   = \"https:\/\/twitter.com\/yagoestevez\"\n    target = \"_blank\"\n    rel    = \"noopener noreferrer\"\n    title  = \"Link to author's Twitter Profile\"\n  ) Yago Estévez"
+          "html": "<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1005\" data-speed=\"-1\" class=\"img-parallax\">\n  <h2>Speed -1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1067\" data-speed=\"1\" class=\"img-parallax\">\n  <h2> Speed 1<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?gravity=center\" data-speed=\"-0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?image=1080\" data-speed=\"0.25\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.25<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?random\" data-speed=\"-0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed -0.75<\/h2>\n<\/div>\n<div class=\"block\">\n  <img src=\"https:\/\/unsplash.it\/1920\/1920\/?blur\" data-speed=\"0.75\" class=\"img-parallax\">\n  <h2>Parallax Speed 0.75<\/h2>\n<\/div>"
         }
       }
     },
