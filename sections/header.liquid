@@ -14,6 +14,8 @@
   {%- assign use_sidebar_menu = true -%}
 {%- endif -%}
 
+{%- comment -%}
+
 {%- if settings.currency_conversion_enabled -%}
   {%- capture currency_conversion_select -%}
     <div class="Header__CurrencySelector Text--subdued Heading Link Link--primary u-h8 hidden-pocket hidden-lap header-left">
@@ -50,6 +52,7 @@
   {%- endcapture -%}
 {%- endif -%}
 
+{%- endcomment -%}
 {%- comment -%}
 --------------------------------------------------------------------------------------------------------------------
 HEADER CONTENT
