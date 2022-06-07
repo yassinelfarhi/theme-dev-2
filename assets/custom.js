@@ -122,7 +122,7 @@
                     setValue: () => {
                         const maxValue = this.renderedStyles.innerTranslationY.maxValue;
                         const minValue = -1 * maxValue;
-                        return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, minValue, maxValue), maxValue), minValue)
+                        return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -0.011  * this.props.height, minValue, maxValue), maxValue), minValue)
                     }
                 }
             };
