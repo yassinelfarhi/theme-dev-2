@@ -265,9 +265,37 @@ section.module.parallax-4 {
 }
 
 .item-icon{
-  width:16px;}
+  width:16px;
+
+}
+
+.hidden-phone-1 .Icon{
+
+  width:22px;
+  height:22px;
+  
+}
 
 
+.hidden-phone .Icon{
+
+  width:19px;
+  height:18px;
+  
+}
+.HorizontalList--spacingLoose .HorizontalList__Item{
+
+ margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+
+.NewsletterPopup .Heading{
+  
+  color:#000 !important;
+
+}
 
 /* oualid */
 *,
@@ -544,11 +572,3 @@ a:focus {
 	margin: 0 0 1rem;
 	display: block;
 }
-
-      #shopify-section-footer{
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-        bottom: 0;
-      }
-  
