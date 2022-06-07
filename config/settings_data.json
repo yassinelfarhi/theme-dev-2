@@ -257,9 +257,8 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
+          "show_popup": true,
           "show_only_on_index": true,
-          "popup_image": "shopify:\/\/shop_images\/PQ0A5696small.webp",
           "show_only_for_visitors": true,
           "show_only_once": false,
           "title": "Stay connected",
@@ -629,11 +628,6 @@
           "cycle_speed": 5,
           "text_color": "#ffffff",
           "button_color": "#363636"
-        }
-      },
-      "parallax-slider": {
-        "type": "parallax-slider",
-        "settings": {
         }
       },
       "165433835702d5f41f": {
