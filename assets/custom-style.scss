@@ -271,17 +271,10 @@ section.module.parallax-4 {
 
 /* oualid */
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
-
-
 
 
 /* Page Loader */
-.js .loading::before {
+/* .js .loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -304,7 +297,7 @@ section.module.parallax-4 {
 	border-radius: 50%;
 	opacity: 0.4;
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-}
+} */
 
 @keyframes loaderAnim {
 	to {
@@ -312,7 +305,7 @@ section.module.parallax-4 {
 		transform: scale3d(0.5,0.5,1);
 	}
 }
-
+/* 
 a {
 	text-decoration: none;
 	outline: none;
@@ -361,14 +354,14 @@ a:focus {
 
 .frame__demo--current,
 .frame__demo--current:hover {
-}
+} */
 
 .content {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	align-items: center;
-	padding: 9.5rem 0;
+	padding: 12rem 0;
 	counter-reset: figure; 
 }
 
@@ -431,6 +424,9 @@ a:focus {
 	--aspect-ratio: 1500/844;
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6013_2x1_a5f95777-6eb6-45d9-977a-6cc09a63d1f0.jpg?v=1654528597);
 }
+.item:last-child {
+	margin-bottom: 500px;
+}
 
 /* .item:nth-child(2) .item__img-wrap {
 	width: 1000px;
@@ -472,9 +468,7 @@ a:focus {
 	--image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/8.jpg);
 }
 
-.item:last-child {
-	margin-bottom: 500px;
-}
+
 
 .item__img {
 	--overflow: 40px;
