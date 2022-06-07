@@ -264,7 +264,7 @@
           "title": "Register to the newsletter",
           "content": "<p> Subscribe to our newsletter to get discount codes and more.<\/p>",
           "show_newsletter": true,
-          "apparition_delay": 4
+          "apparition_delay": 1
         }
       },
       "1595363175996": {
