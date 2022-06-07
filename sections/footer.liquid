@@ -5,13 +5,6 @@
 {%- endif -%}
 
 <footer id="section-{{ section.id }}" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
- 
-  <div class="Footer__FlexItem">
-     <a href="/" class="Footer__LogoLink">
-    <span class="Heading u-h4">{{ shop.name }}</span>
-    </a>
-  </div>
-  
   <div class="Container">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
@@ -76,7 +69,7 @@
           </div>
            
         {%- endfor -%}
-         {% comment %}
+        
          <div class="Footer__Block footer-block">
            <div class="footer-map-block">
            <p class="Footer__Title Heading u-h6">OPENING HOURS</p>
@@ -90,18 +83,16 @@
              </div> 
                 <div class="footer-map-block"> <img width="300px" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/map2.jpg?v=1652717569" loading="lazy"></div> 
           </div>  
-        
-        {% endcomment %}
       </div>
     {%- endif -%}
 
     <div class="Footer__Aside">
       <div class="Footer__Copyright">
-            <img style="margin-top: 5px;display:none" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/artisanat-du-maroc.png?v=1651147765" >
+            <img style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/artisanat-du-maroc.png?v=1651147765" >
      
                   {% include 'social-media', class: 'Footer__Social', spacing: 'loose' %}
                
-        <a href="{{ shop.url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }} ALL RIGHTS RESERVED</a>
+        <a href="{{ shop.url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }} ALL RIGHTS RESERVED sabah</a>
 
         {%- capture maestrooo_link -%}<a href="https://www.maestrooo.com" class="Link Link--primary" target="_blank" rel="noopener">Maestrooo</a>{%- endcapture -%}
       </div>
