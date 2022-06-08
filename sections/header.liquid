@@ -283,7 +283,7 @@ HEADER CONTENT
   {% capture image_size %}{{ section.settings.logo_max_width | escape }}{% endcapture %}
   <img src="{{ 'logo.svg' | asset_url }}" 
        alt="{{ shop.name }}"
-       style="max-width: {{ image_size }}px;">
+      >
 </a>
     {%- endcapture -%}
 
