@@ -36,7 +36,7 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() >= $(document).height() + 50 ) {
+         if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
              document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
            document.getElementById("shopify-section-footer").style.zIndex = "2";
