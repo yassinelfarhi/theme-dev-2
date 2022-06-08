@@ -13,7 +13,6 @@
 	align-items: center;
 	padding-bottom: 9.5rem;	
     padding-top: 0.5rem;
-
 	counter-reset: figure; 
 	margin-bottom: -100px;
 }
@@ -162,7 +161,7 @@ body.template-index #main{
       
 .positionImagetxt{
   position:absolute;
-  top:0;
+  top:15%;
   left:0;
   text-align:left;
 }
