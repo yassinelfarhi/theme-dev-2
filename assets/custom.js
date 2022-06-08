@@ -35,8 +35,8 @@
        }
   	})
      
-     $(window).scroll(function() {
-         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+     $(window).scroll(function() { 
+         if($(window).scrollTop() + $(window).height() >= $(document).height() + 50 ) {
              document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
            document.getElementById("shopify-section-footer").style.zIndex = "2";
