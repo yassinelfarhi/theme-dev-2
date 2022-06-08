@@ -100,9 +100,23 @@
             <img style="margin-top: 5px;display:none" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/artisanat-du-maroc.png?v=1651147765" >
      
                   {% include 'social-media', class: 'Footer__Social', spacing: 'loose' %}
-               
+        
+       <div class="footer__language col-24 col-m-12" role="listitem">
+          <div class="control is-horizontal" >
+            <div class="control-label">
+                <p class="heading is-7 change-language-label" lang="en">
+                  
+                            Change location and language
+                          </p>
+              </div>
+              <div class="control">
+                <button type="button" class="change-localization" data-err-popini18n-title="Our apologies, your page could not be found"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">United States - English (US)</button>
+              </div>
+            </div>
+        </div>
+               {% comment %}
         <a href="{{ shop.url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }} ALL RIGHTS RESERVED</a>
-
+{% endcomment %}
         {%- capture maestrooo_link -%}<a href="https://www.maestrooo.com" class="Link Link--primary" target="_blank" rel="noopener">Maestrooo</a>{%- endcapture -%}
       </div>
 
