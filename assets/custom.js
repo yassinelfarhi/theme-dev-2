@@ -37,8 +37,11 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
-           fadeout($('.content')[0]);fadebool = true;
+           
+           if(fadebool == false){
+             fadeout($('.content')[0]);fadebool = true;
              document.getElementById("shopify-section-footer").style.zIndex = "5";
+           }
          }else{
            if(fadebool == true){
              fadein($('.content')[0]);
