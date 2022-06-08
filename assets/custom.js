@@ -19,25 +19,27 @@
 
 
   $(document).ready(function(){
-    
-    
-   $(".lang-switch").change(function(){
-       
+     $(".lang-switch").change(function(){
        var selectedLanguage = $('.lang-switch option:selected').val();
-   
        switch(selectedLanguage) {
          case "FR":
-          window.location = "https://maisonducaftan.myshopify.com/fr-shop";
-          break;
+           window.location = "https://maisonducaftan.myshopify.com/fr-shop";
+           break;
          case "ENG":
-          window.location = "https://maisonducaftan.myshopify.com/en-shop";
-          break;
+           window.location = "https://maisonducaftan.myshopify.com/en-shop";
+           break;
          case "AR":
-          window.location = "https://maisonducaftan.myshopify.com/ar-shop";
-          break;  
+           window.location = "https://maisonducaftan.myshopify.com/ar-shop";
+           break;  
          default:  
        }
-})
+  	})
+     
+     $(window).scroll(function() {
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+             alert("bottom!");
+         }
+      });
   });
 
     $(document).ready(function(){
