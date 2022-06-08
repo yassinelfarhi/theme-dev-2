@@ -37,7 +37,7 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
-           	$('.content')[0].fadeIn());
+           	$('.content')[0].fadeIn();
              //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
            document.getElementById("shopify-section-footer").style.zIndex = "2";
