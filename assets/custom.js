@@ -37,7 +37,9 @@
      
      $(window).scroll(function() {
          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-             alert("bottom!");
+             document.getElementById("shopify-section-footer").style.zIndex = "100";
+         }else{
+           document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
   });
