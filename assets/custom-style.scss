@@ -209,7 +209,7 @@ section.module.parallax-4 {
   }
 }
  
-  section.module.parallax h1 {
+  .positionImagetxt h1 {
    font-size: 60pt;
     margin-top: 0;
     text-align: left;
@@ -493,19 +493,13 @@ color:#000 !important;
 }
 
 
-body.template-index #shopify-section-footer{
+#shopify-section-footer{
 	position: fixed;
 	width: 100%;
 	z-index: 2;
 	bottom: 0;
 }
 
-body.template-index #main{
+#main{
 	z-index: 3;
-}
-      
-.positionImagetxt{
-  position:absolute;
-  top:0;
-  left:0;
 }
