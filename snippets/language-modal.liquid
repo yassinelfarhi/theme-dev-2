@@ -13,7 +13,6 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-      {{- currency_conversion_select -}}
    {%- if settings.currency_conversion_enabled -%}
   {%- capture currency_conversion_select -%}
     <div class="Header__CurrencySelector Text--subdued Heading Link Link--primary u-h8 hidden-pocket hidden-lap header-left">
@@ -50,6 +49,7 @@
   {%- endcapture -%}
 {%- endif -%}
     {{- currency_conversion_select -}}
+    
   </div>
 
 </div>
