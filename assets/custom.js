@@ -37,45 +37,11 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
-           
-           if(fadebool == false){
-             fadeout($('.content')[0]);fadebool = true;
-             document.getElementById("shopify-section-footer").style.zIndex = "5";
-           }
+           document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
-           if(fadebool == true){
-             fadein($('.content')[0]);
-             document.getElementById("shopify-section-footer").style.zIndex = "2";
-             fadebool = false;
-           }
-           
+           document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
-      function fadeout(element) {
-          var op = 1;  // initial opacity
-          var timer = setInterval(function () {
-              if (op <= 0.1){
-                  clearInterval(timer);
-                  element.style.display = 'none';
-              }
-              element.style.opacity = op;
-              element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-              op -= op * 0.1;
-          }, 50);
-      }
-    
-      function fadein(element) {
-          var op = 0.1;  // initial opacity
-          element.style.display = 'block';
-          var timer = setInterval(function () {
-              if (op >= 1){
-                  clearInterval(timer);
-              }
-              element.style.opacity = op;
-              element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-              op += op * 0.1;
-          }, 10);
-      }
   });
 
     $(document).ready(function(){
