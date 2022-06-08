@@ -15,7 +15,7 @@
  *   var quantity = event.detail.quantity; // Get the quantity that was added
  * });
  */
-
+ var fadebool = false;
 
 
   $(document).ready(function(){
@@ -37,10 +37,14 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
-           fadeout($('.content')[0]);
+           fadeout($('.content')[0]);fadebool = true;
              //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
-           fadein($('.content')[0]);
+           if(fadebool == true){
+             fadein($('.content')[0]);
+           }
+           
+           
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
