@@ -40,7 +40,8 @@
            fadeout($('.content')[0]);
              //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
-           document.getElementById("shopify-section-footer").style.zIndex = "2";
+           fadein($('.content')[0]);
+           //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
       function fadeout(element) {
@@ -54,6 +55,19 @@
               element.style.filter = 'alpha(opacity=' + op * 100 + ")";
               op -= op * 0.1;
           }, 50);
+      }
+    
+      function fadein(element) {
+          var op = 0.1;  // initial opacity
+          element.style.display = 'block';
+          var timer = setInterval(function () {
+              if (op >= 1){
+                  clearInterval(timer);
+              }
+              element.style.opacity = op;
+              element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+              op += op * 0.1;
+          }, 10);
       }
   });
 
