@@ -101,6 +101,8 @@
      
                   {% include 'social-media', class: 'Footer__Social', spacing: 'loose' %}
         
+        {% render 'language-modal' %}
+        
        <div class="footer__language col-24 col-m-12" role="listitem">
           <div class="control is-horizontal" >
             <div class="control-label">
@@ -133,10 +135,7 @@
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
+    
     </div>
   </div>
 </div>
