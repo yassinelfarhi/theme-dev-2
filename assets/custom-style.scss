@@ -361,8 +361,27 @@ color:#000 !important;
       text-decoration-color: #000;
 }
 
-/* oualid */
+.control .is-horizontal{
 
+  display:flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* oualid */
 
 @keyframes loaderAnim {
 	to {
@@ -376,9 +395,8 @@ color:#000 !important;
 	flex-direction: column;
 	position: relative;
 	align-items: center;
-	padding-top: 1.5rem;
+	padding: 9.5rem 0;
 	counter-reset: figure; 
-	margin-bottom: -100px;
 }
 
 .item {
@@ -394,8 +412,8 @@ color:#000 !important;
 }
 
 .item__img-wrap {
-	--aspect-ratio: 4/1.5;
-	/* overflow: hidden; */
+	--aspect-ratio: 1/1.5;
+	overflow: hidden;
 	width: 500px;
 	margin: 0 auto;
 	padding-bottom: calc(100% / (var(--aspect-ratio)));
@@ -403,32 +421,32 @@ color:#000 !important;
 	will-change: transform;
 }
 
-/* 1500/844; */
+
 .item:first-child .item__img-wrap {
 	width: calc(100vw );
-	/* --aspect-ratio: 1500/580; */
+	--aspect-ratio: 1500/844;
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6374nb_2x1_e3c39b70-30a6-41ac-8e14-fb9535e0e5f9.jpg?v=1654528597);
 }
 
 .item:nth-child(2) .item__img-wrap {
 	width: calc(100vw );
-	/* --aspect-ratio: 1500/580; */
+	--aspect-ratio: 1500/844;
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6396_2x1_3a57e6a5-e08a-47df-96c6-e94f3b656ad6.jpg?v=1654528597);
 }
 
 .item:nth-child(3) .item__img-wrap {
 	width: calc(100vw);
-	/* --aspect-ratio: 1500/580; */
+	--aspect-ratio: 1500/844;
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6448_2x1_2622cc2e-e624-4a28-9e4f-b421c4683196.jpg?v=1654528597);
 }
 
 .item:nth-child(4) .item__img-wrap {
 	width: calc(100vw );
-	/* --aspect-ratio: 1500/580; */
+	--aspect-ratio: 1500/844;
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6013_2x1_a5f95777-6eb6-45d9-977a-6cc09a63d1f0.jpg?v=1654528597);
 }
 .item:last-child {
-	height: 500px;
+	margin-bottom: 500px;
 }
 
 
@@ -459,15 +477,14 @@ color:#000 !important;
 
 .item__img {
 	--overflow: 40px;
-    height: calc(100% + (3 * var(--overflow)));
-    top: calc( 0 * var(--overflow));
-    width: 100%;
-    position: absolute;
-    background-image: var(--image);
-    background-size: cover;
-    background-position: 50% 170px;
-    will-change: transform;
-    background-repeat: no-repeat;
+	height: calc(100% + (2 * var(--overflow)));
+	top: calc( -1 * var(--overflow));
+	width: 100%;
+	position: absolute;
+	background-image: var(--image);
+	background-size: cover;
+	background-position: 50% 0%;
+	will-change: transform;
 }
 
 .item__img--t1 {
@@ -509,7 +526,7 @@ color:#000 !important;
 
 
 body.template-index #shopify-section-footer{
-	position: fixed !important;
+	position: fixed;
 	width: 100%;
 	z-index: 2;
 	bottom: 0;
@@ -521,10 +538,7 @@ body.template-index #main{
       
 .positionImagetxt{
   position:absolute;
-  top:18%;
+  top:0;
   left:0;
   text-align:left;
-}
-body.template-index #shopify-section-header{
-	position: fixed !important;
 }
