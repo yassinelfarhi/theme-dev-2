@@ -96,7 +96,7 @@
 .item__img {
 	--overflow: 40px;
     height: calc(100% + (3 * var(--overflow)));
-    top: calc( 0 * var(--overflow));
+    top: calc( -1 * var(--overflow));
     width: 100%;
     position: absolute;
     background-image: var(--image);
