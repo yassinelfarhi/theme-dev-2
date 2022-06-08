@@ -37,11 +37,24 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
-             document.getElementById("shopify-section-footer").style.zIndex = "5";
+           fadeout($('.content')[0]);
+             //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
            document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
+      function fadeout(element) {
+          var op = 1;  // initial opacity
+          var timer = setInterval(function () {
+              if (op <= 0.1){
+                  clearInterval(timer);
+                  element.style.display = 'none';
+              }
+              element.style.opacity = op;
+              element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+              op -= op * 0.1;
+          }, 50);
+      }
   });
 
     $(document).ready(function(){
