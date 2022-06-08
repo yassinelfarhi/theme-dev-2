@@ -376,7 +376,7 @@ color:#000 !important;
 	flex-direction: column;
 	position: relative;
 	align-items: center;
-	padding: 9.5rem 0;
+	padding-top: 1.5rem;
 	counter-reset: figure; 
 	margin-bottom: -100px;
 }
@@ -521,7 +521,7 @@ body.template-index #main{
       
 .positionImagetxt{
   position:absolute;
-  top:0;
+  top:10%;
   left:0;
   text-align:left;
 }
