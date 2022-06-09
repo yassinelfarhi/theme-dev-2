@@ -40,7 +40,7 @@
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;fadebool = true;
            move_box(300);
            //document.getElementById("shopify-section-footer").style.zIndex = "5";
-         }elseif($(window).scrollTop() + $(window).height() <= ($(document).height()- ($(document).height()/2))){
+         }elseif($(window).scrollTop() + $(window).height() <= ($(document).height()/2)){
            move_box(-300);
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;fadebool = false;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
