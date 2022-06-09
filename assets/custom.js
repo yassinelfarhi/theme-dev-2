@@ -43,7 +43,7 @@
            setTimeout(function(){
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 1000);
-           debugger;
+           //debugger;
          }else if($(window).scrollTop() + $(window).height() >= $(document).height() -5 && $(window).scrollTop() + $(window).height() <= $(document).height() -55   ){
            if(fadebool == true){
              document.getElementById("shopify-section-footer").style.zIndex = "2";
@@ -51,7 +51,7 @@
              setTimeout(function(){
                   
               }, 1000);
-             debugger;
+             //debugger;
            }
             
            
