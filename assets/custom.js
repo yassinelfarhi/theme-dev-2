@@ -36,7 +36,7 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() == $(document).height() ) {
+         if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
            document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;fadebool = true;
            //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
