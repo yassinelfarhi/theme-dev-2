@@ -57,6 +57,7 @@
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
+       debugger; 
       });
       
       function move_box(val,bool) {
