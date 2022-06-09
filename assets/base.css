@@ -169,3 +169,7 @@ body.template-index #main{
   left:0;
   text-align:left;
 }
+      
+ body.template-index footer#section-footer{
+   height: calc(100vh - var(--header-height));
+}
