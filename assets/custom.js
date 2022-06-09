@@ -42,14 +42,14 @@
              move_box(250,true);fadebool = true;
            setTimeout(function(){
              document.getElementById("shopify-section-footer").style.zIndex = "5";
-            }, 1000);
+            }, 850);
            
          }else{
            if(fadebool == true){
               move_box(0,false);fadebool = false;
              setTimeout(function(){
                   document.getElementById("shopify-section-footer").style.zIndex = "2";
-              }, 1000);
+              }, 300);
            }
             
            
