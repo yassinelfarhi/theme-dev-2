@@ -719,9 +719,9 @@
       "list-collections-template": {
         "type": "list-collections-template",
         "settings": {
-          "image_size": "large",
+          "image_size": "normal",
           "add_spacing": true,
-          "expand_collection": false,
+          "expand_collection": true,
           "apply_overlay": true,
           "text_color": "#ffffff",
           "button_color": "#363636"
