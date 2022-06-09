@@ -163,7 +163,7 @@
                     setValue: () => {
                         const maxValue = this.renderedStyles.innerTranslationY.maxValue;
                         const minValue = -1 * maxValue;
-                        return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -0.011  * this.props.height, minValue, maxValue), maxValue), minValue)
+                        return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -0.1  * this.props.height, minValue, maxValue), maxValue), minValue)
                     }
                 }
             };
@@ -267,7 +267,7 @@
         }
         layout() {
             // translates the scrollable element
-            this.DOM.scrollable.style.transform = `translate3d(0,${-0.5*this.renderedStyles.translationY.previous}px,0)`;
+            this.DOM.scrollable.style.transform = `translate3d(0,${-0.8*this.renderedStyles.translationY.previous}px,0)`;
         }
         setSize() {
             // set the heigh of the body in order to keep the scrollbar on the page
