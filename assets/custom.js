@@ -40,10 +40,7 @@
            document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;fadebool = true;
            //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
-           if(){
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;fadebool = false;
-           }
-           
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
