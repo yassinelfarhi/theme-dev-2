@@ -36,28 +36,37 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
+         if($(window).scrollTop() + $(window).height() >= $(document).height() -20  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;fadebool = true;
-           move_box(300);
+           move_box(300,true);
            //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else if($(window).scrollTop() + $(window).height() <= $(document).height()/2){
-           move_box(-300);
+           move_box(300,false);
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;fadebool = false;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
       
-      function move_box(val) {
+      function move_box(val,bool) {
         var the_box = document.getElementsByClassName("content")[0];
-        set_translate(the_box, val);
+        set_translate(the_box, val, bool);
       }
 
-      function set_translate(e, pix) {
-        e.style["-webkit-transform"] = "translate(0px, "+ pix +"px)";
-        e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
-        e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
-        e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
-        e.style["transform"] = "translate(0px, -" + pix + "px)";
+      function set_translate(e, pix , bool) {
+        if(bool == true){
+          e.style["-webkit-transform"] = "translate(0px, "+ pix +"px)";
+          e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
+          e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
+          e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
+          e.style["transform"] = "translate(0px, -" + pix + "px)";
+        }else{
+          e.style["-webkit-transform"] = "translate(0px, -"+ pix +"px)";
+          e.style["-moz-transform"] = "translate(0px, " + pix +"px)";
+          e.style["-ms-transform"] = "translate(0px, " + pix + "px)";
+          e.style["-o-transform"] = "translate(0px, -" + pix  + "px)";
+          e.style["transform"] = "translate(0px, " + pix + "px)";
+        }
+        
       }
   });
 
