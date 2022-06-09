@@ -36,7 +36,7 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() = $(document).height() -10  ) {
+         if($(window).scrollTop() + $(window).height() >= $(document).height() -10  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
              move_box(250,true);fadebool = true;
