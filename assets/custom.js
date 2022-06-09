@@ -215,7 +215,7 @@
         }
         layout() {
             // translates the image
-            this.DOM.image.style.transform = `translate3d(0,${-1*this.renderedStyles.innerTranslationY.previous}px,0)`;
+            //this.DOM.image.style.transform = `translate3d(0,${-1*this.renderedStyles.innerTranslationY.previous}px,0)`;
         }
     }
 
