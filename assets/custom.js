@@ -58,10 +58,8 @@
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
-     }
-     
-      
-      function move_box(val,bool) {
+       
+       function move_box(val,bool) {
         var the_box = document.getElementsByClassName("content")[0];
         set_translate(the_box, val, bool);
       }
@@ -82,6 +80,10 @@
         }
         
       }
+     }
+     
+      
+      
   });
 
     $(document).ready(function(){
@@ -104,6 +106,9 @@
             
 });
       
+
+
+if(typeof isIndex !== 'undefined' &&  isIndex){
 /********** oualid **********/
 /**
 * demo.js
@@ -330,4 +335,6 @@
         // Initialize the Smooth Scrolling
         new SmoothScroll();
     });
+}
+
 }
