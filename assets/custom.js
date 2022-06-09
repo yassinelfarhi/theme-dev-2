@@ -36,7 +36,7 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() >= $(document).height() -10  ) {
+         if($(window).scrollTop() + $(window).height() = $(document).height() -10  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
              move_box(250,true);fadebool = true;
@@ -44,7 +44,7 @@
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 850);
            
-         }else if ($(window).scrollTop() + $(window).height() <= $(document).height() - 10 ||  $(window).scrollTop() + $(window).height() >= $(document).height() - 30 ){
+         }else if{
            if(fadebool == true){
               move_box(0,false);fadebool = false;
              setTimeout(function(){
