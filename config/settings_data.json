@@ -719,6 +719,12 @@
       "list-collections-template": {
         "type": "list-collections-template",
         "settings": {
+          "image_size": "small",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
         }
       }
     },
