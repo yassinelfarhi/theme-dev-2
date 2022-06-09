@@ -46,10 +46,8 @@
            
          }else {
            if(fadebool == true){
+             document.getElementById("shopify-section-footer").style.zIndex = "2";
               move_box(0,false);fadebool = false;
-             setTimeout(function(){
-                  document.getElementById("shopify-section-footer").style.zIndex = "2";
-              }, 600);
            }
             
            
