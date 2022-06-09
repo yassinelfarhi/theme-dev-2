@@ -34,7 +34,7 @@
          default:  
        }
   	})
-     if(isIndex){
+     if(isIndex !== 'undefined' &&  isIndex){
        alert(55);
        $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
