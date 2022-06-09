@@ -37,8 +37,10 @@
      
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() ) {
+           document.getElementsByClassName("content")[0].style.transform = `translate3d(0,3rem,0)`;
            document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else{
+           document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-3rem,0)`;
            document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
