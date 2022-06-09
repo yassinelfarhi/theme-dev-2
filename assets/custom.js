@@ -47,9 +47,9 @@
          }else if($(window).scrollTop() + $(window).height() >= $(document).height() -5 || $(window).scrollTop() + $(window).height() <= $(document).height() -15   ){
            if(fadebool == true){
              document.getElementById("shopify-section-footer").style.zIndex = "2";
-              
+              move_box(0,false);fadebool = false;
              setTimeout(function(){
-                  move_box(0,false);fadebool = false;
+                  
               }, 1000);
            }
             
