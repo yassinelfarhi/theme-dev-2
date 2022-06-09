@@ -36,29 +36,26 @@
   	})
      
      $(window).scroll(function() { 
-         if($(window).scrollTop() + $(window).height() >= $(document).height()  ) {
+         if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
              move_box(250,true);fadebool = true;
            setTimeout(function(){
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 1000);
-           //debugger;
+           
          }else {
-           if(fadebool == true){
-             document.getElementById("shopify-section-footer").style.zIndex = "2";
+           if(fadebool == true){document.getElementById("shopify-section-footer").style.zIndex = "2";
               move_box(0,false);fadebool = false;
              setTimeout(function(){
                   
               }, 1000);
-             //debugger;
            }
             
            
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
-        
       });
       
       function move_box(val,bool) {
