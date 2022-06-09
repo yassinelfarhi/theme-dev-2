@@ -39,7 +39,7 @@
          if($(window).scrollTop() + $(window).height() >= $(document).height() -20  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
-             move_box(300,true);fadebool = true;
+             move_box(250,true);fadebool = true;
            setTimeout(function(){
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 1000);
