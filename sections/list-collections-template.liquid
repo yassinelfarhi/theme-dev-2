@@ -1,32 +1,143 @@
-{% comment %}
- Featuring collections on a page using a menu
- https://shopify-dev.com/tutorials/feature-a-subset-of-collections-on-a-page
-{% endcomment %}
+{%- if template == 'list-collections' -%}
+  {%- assign linklist = linklists.all-collections -%}
+{%- elsif template == 'page.collections' -%}
+  {%- assign linklist_handle = page.content | strip_html | handle -%}
+  {%- assign linklist = linklists[linklist_handle] -%}
+{%- endif -%}
 
-{%- assign grid_item_width = 'small--one-half medium--one-third large-up--one-quarter' -%}
-{%- case linklists[page.handle].links.size -%}
-{%- when 2 -%}
- {%- assign grid_item_width = 'medium-up--one-half' -%}
-{%- when 3 -%}
- {%- assign grid_item_width = 'small--one-half medium-up--one-third' %}
+{%- assign collection_count = 0 -%}
+
+{%- unless linklist.empty? -%}
+  {%- for link in linklist.links -%}
+    {%- if link.type == 'collection_link' -%}
+      {%- assign collection_count = collection_count | plus: 2 -%}
+    {%- endif -%}
+  {%- endfor -%}
 {%- else -%}
- {%- assign grid_item_width = 'small--one-half medium--one-third large-up--one-quarter' %}
-{%- endcase -%}
+  {%- for collection in collections -%}
+    {%- unless collection.handle == 'frontpage' -%}
+      {%- assign collection_count = collection_count | plus: 2 -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endunless -%}
 
-<div class="page-width page-container">
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
-  <div class="rte rte--indented-images">
-    {{ page.content }}
+{%- if collection_count == 0 -%}
+  <div class="EmptyState">
+    <div class="container">
+      <h3 class="EmptyState__Title Heading u-h5">{{ 'collection_list.general.empty_title' | t }}</h3>
+      <a href="/" class="EmptyState__Action Button Button--primary">{{ 'collection_list.general.empty_button' | t }}</a>
+    </div>
   </div>
+{%- else -%}
+  <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list">
+    <header class="PageHeader">
+      <div class="SectionHeader SectionHeader--center">
+        <h1 class="SectionHeader__Heading Heading u-h1">
+          {%- if template == 'list-collections' -%}
+            {{- 'collection_list.general.title' | t -}}
+          {%- else -%}
+            {{- page.title -}}
+          {%- endif -%}
+        </h1>
+      </div>
+    </header>
 
-  <div class="grid grid--no-gutters collection-grid">
-    {%- for link in linklists[page.handle].links -%}
-      {%- if link.type == 'collection_link' -%}
-        {%- assign featured = link.object.handle -%}
-        {%- include 'collection-grid-item', collection: collections[featured] -%}
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
-</div>
+    <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
+      {%- unless linklist.empty? -%}
+        {%- for link in linklist.links -%}
+          {%- if link.type != 'collection_link' -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {%- include 'collection-item', collection: link.object, apply_overlay: section.settings.apply_overlay -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for collection in collections -%}
+          {%- unless collection.handle == 'frontpage' -%}
+            {%- include 'collection-item', collection: collection, apply_overlay: section.settings.apply_overlay -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endunless -%}
+    </div>
+  </section>
+{%- endif -%}
+
+<style>
+  #section-{{ section.id }} .CollectionItem .Heading {
+    color: {{ section.settings.text_color }};
+  }
+
+  #section-{{ section.id }} .CollectionItem__Link {
+    color: {{ section.settings.button_color }};
+    border-color: {{ section.settings.text_color }};
+  }
+
+  #section-{{ section.id }} .CollectionItem__Link::before {
+    background-color: {{ section.settings.text_color }};
+  }
+
+  @media (-moz-touch-enabled: 0), (hover: hover) {
+    #section-{{ section.id }} .CollectionItem__Link:hover {
+      color: {{ section.settings.text_color }};
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "List collections page",
+  "settings": [
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_spacing",
+      "label": "Add spacing",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "expand_collection",
+      "label": "Expand collections to fill row",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "apply_overlay",
+      "label": "Apply overlay on image",
+      "info": "This can improve text visibility.",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text",
+      "default": "#363636"
+    }
+  ]
+}
+{% endschema %}
