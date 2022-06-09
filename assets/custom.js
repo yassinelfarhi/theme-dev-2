@@ -35,6 +35,7 @@
        }
   	})
      if(isIndex){
+       alert(55);
        $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
