@@ -34,8 +34,8 @@
          default:  
        }
   	})
-     
-     $(window).scroll(function() { 
+     if(isIndex){
+       $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
@@ -57,6 +57,8 @@
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
+     }
+     
       
       function move_box(val,bool) {
         var the_box = document.getElementsByClassName("content")[0];
