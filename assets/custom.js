@@ -215,7 +215,7 @@
         }
         layout() {
             // translates the image
-            this.DOM.image.style.transform = `translate3d(0,${-2*this.renderedStyles.innerTranslationY.previous}px,0)`;
+            this.DOM.image.style.transform = `translate3d(0,${-1*this.renderedStyles.innerTranslationY.previous}px,0)`;
         }
     }
 
@@ -267,7 +267,7 @@
         }
         layout() {
             // translates the scrollable element
-            this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
+            this.DOM.scrollable.style.transform = `translate3d(0,${-2*this.renderedStyles.translationY.previous}px,0)`;
         }
         setSize() {
             // set the heigh of the body in order to keep the scrollbar on the page
