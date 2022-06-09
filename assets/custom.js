@@ -36,8 +36,7 @@
   	})
      
      $(window).scroll(function() { 
-         //if($(window).scrollTop() + $(window).height() >= $(document).height()  ) {
-           if($(window).scrollTop() + $(window).height() >= $(document).height() -15 && $(window).scrollTop() + $(window).height() <= $(document).height()   ){
+         if($(window).scrollTop() + $(window).height() >= $(document).height()  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
            
              move_box(250,true);fadebool = true;
