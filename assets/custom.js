@@ -44,12 +44,14 @@
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 1000);
            
-         }else if($(window).scrollTop() + $(window).height() <= $(document).height()/2){
-           
-             move_box(0,false);fadebool = false;
-           setTimeout(function(){
-                document.getElementById("shopify-section-footer").style.zIndex = "2";
-            }, 1000);
+         }else{
+           if(fadebool == true){
+              move_box(0,false);fadebool = false;
+             setTimeout(function(){
+                  document.getElementById("shopify-section-footer").style.zIndex = "2";
+              }, 1000);
+           }
+            
            
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
