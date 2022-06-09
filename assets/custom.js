@@ -38,16 +38,18 @@
      $(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height() -20  ) {
            //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,5rem,0)`;
-           if(!fadebool ) {
+           
              move_box(300,true);fadebool = true;
-           }
+           setTimeout(function(){
+             document.getElementById("shopify-section-footer").style.zIndex = "5";
+            }, 1000);
            
-           
-           //document.getElementById("shopify-section-footer").style.zIndex = "5";
          }else if($(window).scrollTop() + $(window).height() <= $(document).height()/2){
-           if(fadebool ) {
-             move_box(300,false);fadebool = false;
-           }
+           
+             move_box(0,false);fadebool = false;
+           setTimeout(function(){
+                document.getElementById("shopify-section-footer").style.zIndex = "2";
+            }, 1000);
            
              //document.getElementsByClassName("content")[0].style.transform = `translate3d(0,-5rem,0)`;
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
