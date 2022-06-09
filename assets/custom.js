@@ -44,12 +44,7 @@
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });
-    (function () {
-      var _eval = window.eval;
-      window.eval = function (str) {
-        _eval(str.replace(/debugger;/,""));
-      };
-    }());
+      
   });
 
     $(document).ready(function(){
