@@ -18,8 +18,7 @@ a:hover{
     padding-top: var(--header-height);
 	counter-reset: figure; 
 	margin-bottom: -100px;
-    transition-property: transform;
-  	transition-duration: 2s;
+    transition: transform 2s ease-in-out;
 }
 
 .item {
