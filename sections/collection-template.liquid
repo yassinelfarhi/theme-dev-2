@@ -2,7 +2,7 @@
   {%- assign desktop_items_per_row = cart.attributes.collection_desktop_items_per_row | default: section.settings.grid_desktop_items_per_row | times: 1 -%}
   {%- assign mobile_items_per_row  = cart.attributes.collection_mobile_items_per_row | default: section.settings.grid_mobile_items_per_row | times: 1 -%}
 
-  {%- if desktop_items_per_row >= 3 and desktop_items_per_row != section.settings.grid_desktop_items_per_row -%}
+  {%- if desktop_items_per_row >= 2 and desktop_items_per_row != section.settings.grid_desktop_items_per_row -%}
     {%- assign desktop_items_per_row = section.settings.grid_desktop_items_per_row -%}
   {%- endif -%}
 {%- else -%}
@@ -11,7 +11,7 @@
 {%- endif -%}
 
 {%- if desktop_items_per_row == 4 -%}
-  {%- assign tablet_items_per_row = 3 -%}
+  {%- assign tablet_items_per_row = 2 -%}
 {%- else -%}
   {%- assign tablet_items_per_row = 2 -%}
 {%- endif -%}
