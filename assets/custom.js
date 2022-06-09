@@ -44,7 +44,7 @@
              document.getElementById("shopify-section-footer").style.zIndex = "5";
             }, 1000);
            //debugger;
-         }else if($(window).scrollTop() + $(window).height() >= $(document).height() -5 && $(window).scrollTop() + $(window).height() <= $(document).height() -55   ){
+         }else {
            if(fadebool == true){
              document.getElementById("shopify-section-footer").style.zIndex = "2";
               move_box(0,false);fadebool = false;
