@@ -67,11 +67,11 @@
           e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
           e.style["transform"] = "translate(0px, -" + pix + "px)";
         }else{
-          e.style["-webkit-transform"] = "translate(0px, -"+ pix +"px)";
-          e.style["-moz-transform"] = "translate(0px, " + pix +"px)";
-          e.style["-ms-transform"] = "translate(0px, " + pix + "px)";
-          e.style["-o-transform"] = "translate(0px, -" + pix  + "px)";
-          e.style["transform"] = "translate(0px, " + pix + "px)";
+          e.style["-webkit-transform"] = "translate(0px,0px)";
+          e.style["-moz-transform"] = "translate(0px,0px)";
+          e.style["-ms-transform"] = "translate(0px,0px)";
+          e.style["-o-transform"] = "translate(0px,0px)";
+          e.style["transform"] = "translate(0px,0px)";
         }
         
       }
