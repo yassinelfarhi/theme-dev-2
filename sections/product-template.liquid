@@ -13,7 +13,12 @@
   
 <section class="wathing-customers Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
 
+     {% comment %}
+
+  
   {%- include 'product-nav' -%}
+  
+     {%- endcomment -%}
   {%- include 'product-meta-mobile', show_description: true -%}
   
 
