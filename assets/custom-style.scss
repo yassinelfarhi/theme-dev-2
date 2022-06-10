@@ -521,3 +521,25 @@ html {
 }
 
 
+.shopify-payment-button__button{
+  
+  border-color: #000000;
+ 
+}
+
+.shopify-payment-button__button:before{
+    background-color: #000000;
+}
+  
+
+.shopify-payment-button__button--unbranded:not([disabled]):hover{
+    color: #000000;
+}
+  
+.Button--secondary:not([disabled]):hover{
+    border-color: #000000;
+}
+
+.Button--secondary:before{
+ background-color: #000000;
+}
