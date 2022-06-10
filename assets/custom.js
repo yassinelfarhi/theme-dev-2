@@ -65,16 +65,16 @@
         $(window).scroll(function(event){
            var st = $(this).scrollTop();
            if (st > lastScrollTop){
-             console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height())
-               if($(window).scrollTop() + $(window).height() >= $(document).height() - 10 ) {
+             console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height()-200)
+               if($(window).scrollTop() + $(window).height() >= $(document).height() - 200 ) {
                  move_box(250,true);
                  setTimeout(function(){
                    document.getElementById("shopify-section-footer").style.zIndex = "5";
                   }, 1000);
         		}
            } else {
-               if($(window).scrollTop() + $(window).height() <= $(document).height() - 10  ) {
-                 console.log("UpScrolle"+ ($(window).scrollTop() + $(window).height()) +"<="+ $(document).height()-20)
+               if($(window).scrollTop() + $(window).height() <= $(document).height() - 200  ) {
+                 console.log("UpScrolle"+ ($(window).scrollTop() + $(window).height()) +"<="+ $(document).height()-200)
                  	document.getElementById("shopify-section-footer").style.zIndex = "2";
               		move_box(0,false);
         		}
