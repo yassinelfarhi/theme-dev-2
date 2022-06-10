@@ -531,7 +531,8 @@ html {
     background-color: #000000;
 }
   
-.shopify-payment-button__button:hover{
+
+.shopify-payment-button__button--unbranded:not([disabled]):hover{
     color: #000000;
 }
   
