@@ -1,160 +1,95 @@
+<div class="SizeSelection-header"><div class="SizeSelection-title">Size : </div>
+      <div class="SizeSelection-countryOfOriginAndSizeGuide">
+      <button class="SizeSelection-sizeGuideLink" id="myBtn-1">
+        <span class="SizeSelection-sizeGuideLinkText"> Size guide</span>
+      </button>
+      </div>
+     </div>
+
+
+<!-- The Modal -->
+<div id="myModal-1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="Rte"><p>Please refer to the table below to verify your appropriate size before placing any order.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/caftan-1_jpg_480x480.webp?v=1648740577" alt=""></p>
+<p>&nbsp;</p></div>
+  </div>
+
+</div>
+
+
+
 <style>
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-.transition (@time: .5s, @range: all, @ease: ease-out) {
-  -moz-transition: @range @time @ease;
-  -webkit-transition: @range @time @ease;
-  -o-transition: @range @time @ease;
-  transition: @range @time @ease;
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.transition-delay (@time: .4s) {
-	-webkit-transition-delay: @time;  
-	-moz-transition-delay: @time;  
-	-o-transition-delay: @time;  
-	-transition-delay: @time; 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
-.border-radius(@radius) {
-	-moz-border-radius:@radius;
-	-webkit-border-radius:@radius; 
-  border-radius: @radius;
-}
-
-.gradient (@coler1: #fff, @coler2: #ccc) {
-    background: @coler1;
-    background: -moz-linear-gradient(@coler1, @coler2);
-    background: -webkit-linear-gradient(@coler1, @coler2);
-    background: -o-linear-gradient(@coler1, @coler2);
-}
-
-.box-shadow(@dims:0 0 10px, @color:#000) {
-	box-shadow: @dims @color; // Opera, FFX4
-	-moz-box-shadow:@dims @color; // FFX3.5
-	-webkit-box-shadow:@dims @color; // Safari/Chrome/WebKit
-	.ie7 { filter: e(%("progid:DXImageTransform.Microsoft.Shadow(color='%d', Direction=135, Strength=3)", @color)); }
-}
-
-.inset(@dims:1px 1px 1px, @color:#fff) {
-    box-shadow: @dims @color; // Opera, FFX4
-    -moz-box-shadow:@dims @color; // FFX3.5
-    -webkit-box-shadow:@dims @color; // Safari/Chrome/WebKit
-}
-
-body { 
-  width: 100%; 
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grid.png) repeat #fefefe;
-}
-
-
-.button {
-  margin: 40px auto;
-  font-size: 72px;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  text-decoration: none;
-  text-shadow: 1px 1px 0px #fff;
-  font-weight: 400; 
-  color: #666;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  padding: 20px 70px 30px;
-  position: relative;
-  top: 50px;
-  background: #eee;
-  width: 300px;
-  display: block;
-  text-align: center;
-  .inset;
-  .border-radius(5px);
-  .transition;
-  &:hover{ color: #333; background: #eeffff; .transition;}
-}
-
-.modalbg {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0);
-	z-index: 99999;
-	.transition(2s);
-  .transition-delay(.2s);
-	display: block;
-	pointer-events: none;
-  .dialog {
-    width: 400px;
-    position: relative;
-    top: -1000px;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    .border-radius(10px);
-    .gradient;
-    .box-shadow;
-  }
-}
-
-.modalbg:target {
-	display: block;
-	pointer-events: auto;
-  background: rgba(4, 10 ,30, .8);
-  .transition();
-  .dialog {
-    top: -20px;
-    .transition(.8s);
-    .transition-delay;
-  }
-}
-
-
-
+/* The Close Button */
 .close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-  .box-shadow;
-  .transition;
-  .transition-delay(.2s);
-  &:hover { background: #00d9ff; .transition; }
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.fineprint {
-  font-style: italic;
-  font-size: 10px;
-  color: #646;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-a { color: #333; text-decoration: none; }
-
-
-
-
 </style>
 
 
+<script>
 
-//HTML
+// Get the modal
+var modal = document.getElementById("myModal-1");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn-1");
 
-<a class="button" href="#openModal">Open it up!</a>
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-<div id="openModal" class="modalbg">
-  <div class="dialog">
-    <a href="#close" title="Close" class="close">X</a>
-  	<h2>Holy Crap!!!</h2>
-		<p>You freakin' did it!</p>
-		<p>You opened up the freakin' modal window! Now close it, ya dingus.</p>
-    <p class="fineprint">Based on the article "Creating a modal window with HTML5 & CSS3" at <a href="webdesignerdepot.com">Webdesigner Depot</a></p>
-    <p class="fineprint">p.s. Sorry for calling you a dingus earlier.</p>
-	</div>
-</div>
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
