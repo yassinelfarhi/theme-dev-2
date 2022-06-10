@@ -473,9 +473,10 @@ button.Form__Submit.Button.Button--primary.Button--full.modal-btn {
   text-align:left;
 }
 
+
 .Footer__Copyright {
-    /* justify-items: center; */
-    display: flex;
+    justify-items: center !important;
+    display: flex !important;
     justify-content: space-between;
     flex-direction: row-reverse;
     margin: 0 50px;
@@ -489,4 +490,9 @@ ul.Footer__Social.HorizontalList.HorizontalList--spacingLoose {
 
 .modal-btn-g {
     position: relative !important; 
+  	left: unset !important;
+}
+.Footer__Aside {
+    display: flex!important;
+    justify-content: center!important;
 }
