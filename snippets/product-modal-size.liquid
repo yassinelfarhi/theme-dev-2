@@ -1,18 +1,95 @@
-<button id="contact-modal-button" class="btn">Questions?</button><div id="modal-contact-dark-overlay"></div>  <div id="contact-modal-container">    <div id="contact-modal">      <button id="contact-modal-exit">&#x2715;</button>      <h1>Contact Us</h1>      <p id="modal-success-message"></p>      <div id="contact-modal-form-content">        {% form 'contact' %}          {{ form.errors | default_errors }}</div></div></div>
- <label for="ContactFormArtwork" class="label--hidden">{{ product.title }}</label>          <input type="text" id="ContactFormArtwork" name="contact[Artwork]" value="{{ product.title }}" readonly="readonly">    
-     <label for="ContactFormSku" class="label--hidden">{{ product.selected_or_first_available_variant.sku }}</label>          <input type="text" id="ContactFormSku" name="contact[Sku]" value="{{ product.selected_or_first_available_variant.sku }}" readonly="readonly">          
-         {% assign name_attr = 'contact.form.name' | t | handle %}          <label for="ContactFormName" class="label--hidden">{{ 'contact.form.name' | t }}</label>          <input type="text" id="ContactFormName" name="contact[{{ 'contact.form.name' | t }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-        <label for="ContactFormEmail" class="label--hidden">{{ 'contact.form.email' | t }}</label>         <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
-        {% assign name_attr = 'contact.form.phone' | t | handle %}         <label for="ContactFormPhone" class="label--hidden">{{ 'contact.form.phone' | t }}</label>         <input type="tel" id="ContactFormPhone" name="contact[{{ 'contact.form.phone' | t }}]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
-        <label for="ContactFormMessage" class="label--hidden">{{ 'contact.form.message' | t }}</label>         <textarea rows="10" id="ContactFormMessage" name="contact[{{ 'contact.form.message' | t }}]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>  
-        <input type="submit" class="btn right" value="{{ 'contact.form.send' | t }}">     {% assign form_success = form.posted_successfully? %}      {% endform %}          
+<div class="SizeSelection-header"><div class="SizeSelection-title">Size : </div>
+      <div class="SizeSelection-countryOfOriginAndSizeGuide">
+      <button class="SizeSelection-sizeGuideLink" id="myBtn">
+        <span class="SizeSelection-sizeGuideLinkText"> Size guide</span>
+      </button>
+      </div>
+     </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="Rte"><p>Please refer to the table below to verify your appropriate size before placing any order.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/caftan-1_jpg_480x480.webp?v=1648740577" alt=""></p>
+<p>&nbsp;</p></div>
+  </div>
+
+</div>
+
 
 
 <style>
 
- #modal-contact-dark-overlay {    display: none;    position: fixed;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(0, 0, 0, 0.7);    overflow: auto;    animation-name: animateopacity;    animation-duration: 0.5s;  }    @keyframes animateopacity {    from {background-color: rgba(0, 0, 0, 0.0)}    to {background-color: rgba(0, 0, 0, 0.7)}  }  #contact-modal-container {    display: none;    position: fixed;    top: 0;    left: 0;    width: 100%;    height: 100%;  }  #contact-modal {    position: relative;    margin: 0 auto;    background-color: white;    width: 30%;    height: auto;    padding: 20px 40px 50px 40px;    box-shadow: -1px 3px 18px 0px rgba(128,128,128,1);    animation: drop-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);    transform: translate(0%, -25%);    top: 25%;  }  @media(max-width: 1200px){    #contact-modal {      width: 40%;    }    }  @media(max-width: 770px){    #contact-modal {      width: 85%;    }    }    @keyframes drop-in {    from {top: 10%;}    to {top: 25%}  }    #contact-modal-exit {    position: absolute;    right: 20px;    border:none;    background:none;    font-size: 18px;  }  .hide-modal-content {    display: none;  }  #contact-modal-button {    position: relative;    background: black;    left: 243px;    top: -78px;    min-width: 34%;      }  @media(max-width: 770px){    #contact-modal-button {      position: static;       width: 100%;      display: flex;      justify-content: center;    }   }      input#ContactFormArtwork {    background-color: #F5F5F5;    font-style: italic;  }  input#ContactFormSku {    background-color: #F5F5F5;    font-style: italic;  }  input#ContactFormArtwork:focus {    outline: none;  }  input#ContactFormSku:focus {    outline: none;  }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 
-<script>  const showOverlay = () => document.querySelector("#modal-contact-dark-overlay").style.display = "block";  const showModal = () => document.querySelector("#contact-modal-container").style.display = "block";    const hideOverlay = () => document.querySelector("#modal-contact-dark-overlay").style.display = "none";  const hideModal = () => document.querySelector("#contact-modal-container").style.display = "none";  // Open the Modal Window  document.querySelector("#contact-modal-button").onclick = function(){    showOverlay();    showModal();  }// Close the Modal Window by clicking the X  document.getElementById("contact-modal-exit").onclick = function(){    hideOverlay();    hideModal();  }// Close the Modal Window by clicking outside the box    window.onclick = function(event) {    if(event.target === document.querySelector('#contact-modal-container')) {      hideOverlay();      hideModal();        }  }  const hideFormFields = () => document.querySelector('#contact-modal-form-content').classList.add('hide-modal-content');// Show success message on page load        window.onload = function(){        if({{ form_success }}){  hideFormFields();      showOverlay();      showModal();      document.querySelector('#modal-success-message').innerHTML = "{{ 'contact.form.post_success' | t }}";    }  }</script>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
