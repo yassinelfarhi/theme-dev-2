@@ -63,7 +63,7 @@
         $(window).scroll(function(event){
            var st = $(this).scrollTop();
            if (st > lastScrollTop){
-             console.log($(window).scrollTop() +"+"+ $(window).height() +">="+ $(document).height())
+             console.log("DownScrolle"+$(window).scrollTop() +"+"+ $(window).height() +">="+ $(document).height())
                if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
                  move_box(250,true);fadebool = true;
                  setTimeout(function(){
@@ -71,8 +71,7 @@
                   }, 1000);
         		}
            } else {
-              // upscroll code
-               if($(window).scrollTop() + $(window).height() <= $(document).height() - 20  ) {
+               if("UpScrolle"+$(window).scrollTop() + $(window).height() <= $(document).height() - 20  ) {
                  move_box(250,true);fadebool = true;
                  setTimeout(function(){
                    document.getElementById("shopify-section-footer").style.zIndex = "5";
