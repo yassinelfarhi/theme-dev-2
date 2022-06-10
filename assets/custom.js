@@ -71,7 +71,8 @@
                   }, 1000);
         		}
            } else {
-               if("UpScrolle"+$(window).scrollTop() + $(window).height() <= $(document).height() - 20  ) {
+               if($(window).scrollTop() + $(window).height() <= $(document).height() - 20  ) {
+                 console.log("UpScrolle"+$(window).scrollTop() +"+"+ $(window).height() +">="+ $(document).height())
                  move_box(250,true);fadebool = true;
                  setTimeout(function(){
                    document.getElementById("shopify-section-footer").style.zIndex = "5";
