@@ -483,8 +483,8 @@ button.Form__Submit.Button.Button--primary.Button--full.modal-btn {
 }
 ul.Footer__Social.HorizontalList.HorizontalList--spacingLoose {
     display: flex;
-    /* position: absolute; */
-    /* right: 150px; */
+    position: unset !important; 
+   	right: unset !important; 
     justify-content: center;
 }
 
