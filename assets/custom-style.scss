@@ -472,3 +472,21 @@ button.Form__Submit.Button.Button--primary.Button--full.modal-btn {
   left:0;
   text-align:left;
 }
+
+.Footer__Copyright {
+    /* justify-items: center; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0 50px;
+}
+ul.Footer__Social.HorizontalList.HorizontalList--spacingLoose {
+    display: flex;
+    /* position: absolute; */
+    /* right: 150px; */
+    justify-content: center;
+}
+
+.modal-btn-g {
+    position: relative !important; 
+}
