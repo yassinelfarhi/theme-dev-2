@@ -59,6 +59,29 @@
          }
       });
        
+       var lastScrollTop = 0;
+        $(window).scroll(function(event){
+           var st = $(this).scrollTop();
+           if (st > lastScrollTop){
+             console.log($(window).scrollTop() +"+"+ $(window).height() +">="+ $(document).height())
+               if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
+                 move_box(250,true);fadebool = true;
+                 setTimeout(function(){
+                   document.getElementById("shopify-section-footer").style.zIndex = "5";
+                  }, 1000);
+        		}
+           } else {
+              // upscroll code
+               if($(window).scrollTop() + $(window).height() <= $(document).height() - 20  ) {
+                 move_box(250,true);fadebool = true;
+                 setTimeout(function(){
+                   document.getElementById("shopify-section-footer").style.zIndex = "5";
+                  }, 1000);
+        		}
+           }
+           lastScrollTop = st;
+        });
+       
        function move_box(val,bool) {
         var the_box = document.getElementsByClassName("content")[0];
         set_translate(the_box, val, bool);
