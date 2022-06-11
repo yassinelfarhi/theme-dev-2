@@ -55,7 +55,7 @@
         <div class="tooltip">{{ value }}</div>
         {% endif %}
         <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
-      <div class="Popover__ValueList" data-scrollable>
+ 
                     {%- for value in option.values -%}
                       <button type="button" class="Popover__Value {% if value == option.selected_value %}is-selected{% endif %} Heading Link Link--primary u-h6"
                               data-value="{{ value | escape }}"
@@ -68,7 +68,7 @@
                         {{- value | escape -}}
                       </button>
                     {%- endfor -%}
-                  </div>
+                  
       </div>
     {% endunless %}
     {% if variant.available %}
