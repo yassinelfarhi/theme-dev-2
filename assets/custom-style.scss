@@ -739,7 +739,7 @@ font-family: 'Metropolis-SemiBold' !important;
   display:none !important;
 }
 
-.swatch--gl:has(label[data-name="Material"]) 
+.swatch--gl:has([data-name="Material"]) 
 
 {
   display:none !important;
