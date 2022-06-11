@@ -34,6 +34,12 @@
          default:  
        }
   	})
+     
+     function checkedColor(value){
+          const element = document.querySelector('button[data-value="'+value+'"]');
+          console.log(element);
+          element.click();
+      }
      if(typeof isIndex !== 'undefined' &&  isIndex){
        
        /*$(window).scroll(function() { 
