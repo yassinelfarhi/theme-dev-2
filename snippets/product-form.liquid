@@ -153,20 +153,7 @@ for size, we use it to display a size chart (if applicable)
                 </header>
 
                 <div class="Popover__Content">
-                  <div class="Popover__ValueList" data-scrollable>
-                    {%- for value in option.values -%}
-                      <button type="button" class="Popover__Value {% if value == option.selected_value %}is-selected{% endif %} Heading Link Link--primary u-h6"
-                              data-value="{{ value | escape }}"
-                              data-option-position="{{ option.position }}"
-                              {% if is_option_with_color_swatch %}
-                                data-background-color="{{ value | replace: ' ', '' }}"
-                                data-background-image="{{ value | handle | append: '.png' | asset_url }}"
-                              {% endif %}
-                              data-action="select-value">
-                        {{- value | escape -}}
-                      </button>
-                    {%- endfor -%}
-                  </div>
+              
 
                   {%- assign size_chart_page_handle = settings.size_chart_page | default: 'size-chart' -%}
                   {%- assign size_chart_page = pages[size_chart_page_handle] -%}
