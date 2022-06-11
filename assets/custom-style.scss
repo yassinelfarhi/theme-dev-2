@@ -425,13 +425,13 @@ color:#000 !important;
 
 .currency-selector{
 
-  padding-bottom: 31px !important;
+  padding-bottom: 31px; !!important;
     padding-top: 20px !important;
 }
 
 .lang-selector{
 
-  padding-bottom: 31px !important;
+  padding-bottom: 31px; !!important;
     padding-top: 20px !important;
 }
 
@@ -544,3 +544,9 @@ html {
  background-color: #000000;
 }
 
+.ProductMeta .ProductMeta__Title{
+
+  font-size: 18px;
+  font-family: 'Metropolis-SemiBold';
+  
+}
