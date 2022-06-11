@@ -243,9 +243,7 @@ for size, we use it to display a size chart (if applicable)
 
 <!-- swatch -->
 {% if product.available and product.variants.size > 1 %}
-{% for option in product.options %}
-{% include 'swatch' with option %}
-{% endfor %}
+ {% include 'swatch' with 'Color' %}
 {% endif %}
 <!-- end swatch -->
 
