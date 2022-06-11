@@ -65,7 +65,7 @@
         $(window).scroll(function(event){
            var st = $(this).scrollTop();
            if (st > lastScrollTop){
-             console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height()-200)
+             /* console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height()-200) */
                if($(window).scrollTop() + $(window).height() >= $(document).height() - 200 ) {
                  move_box(250,true);
                  setTimeout(function(){
@@ -73,8 +73,8 @@
                   }, 1000);
         		}
            } else {
-               if($(window).scrollTop() + $(window).height() <= $(document).height() - 200  ) {
-                 console.log("UpScrolle"+ ($(window).scrollTop() + $(window).height()) +"<="+ $(document).height()-200)
+               if($(window).scrollTop() + $(window).height() <= $(document).height() - 50  ) {
+                 /* console.log("UpScrolle"+ ($(window).scrollTop() + $(window).height()) +"<="+ $(document).height()-200) */
                  	document.getElementById("shopify-section-footer").style.zIndex = "2";
               		move_box(0,false);
         		}
