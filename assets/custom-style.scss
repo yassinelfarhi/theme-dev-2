@@ -603,7 +603,12 @@ font-family: 'Metropolis-SemiBold' !important;
   text-transform:uppercase;
 }
 .swatch-element label { padding:0 10px; }
-.color.swatch-element label { padding:0; }
+.color.swatch-element label {
+  padding:0; 
+  width: 30px;
+  height: 30px;
+
+}
 /* Styling selected swatch */
 /* Slightly raised */
 .swatch input:checked + label {
