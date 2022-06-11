@@ -31,7 +31,7 @@ for size, we use it to display a size chart (if applicable)
        <div class="Collapsible__Inner">
                     <div class="Collapsible__Content">
                       <ul class="{% if show_color_swatch %}ColorSwatchList HorizontalList HorizontalList--spacingTight{% else %}Linklist{% endif %}">
-                        {%- for tag in collection.all_tags -%}
+                        {%- for tag in product.all_tags -%}
                           {%- assign tag_parts = tag | split: '_' -%}
 
                           {%- if tag_parts.first != group -%}
