@@ -739,4 +739,9 @@ font-family: 'Metropolis-SemiBold' !important;
   display:none !important;
 }
 
-.swatch--gl[data-name="Material"] {display:none !important;} 
+.swatch--gl label[data-name="Material"] 
+
+{
+  display:none !important;
+
+} 
