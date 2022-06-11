@@ -55,20 +55,17 @@
         <div class="tooltip">{{ value }}</div>
         {% endif %}
         <input id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} {% unless variant.available %}disabled{% endunless %} />
- 
-                  
-                      <button type="button" class="Popover__Value {% if value == option.selected_value %}is-selected{% endif %} Heading Link Link--primary u-h6"
-                              data-value="{{ value | escape }}"
-                              data-option-position="{{ option.position }}"
-                              {% if is_option_with_color_swatch %}
-                                data-background-color="{{ value | replace: ' ', '' }}"
-                                data-background-image="{{ value | handle | append: '.png' | asset_url }}"
-                              {% endif %}
-                              data-action="select-value">
-                        {{- value | escape -}}
-                      </button>
-                   
-                  
+        {% if is_color %}
+        
+        <label for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})">
+          <img class="crossed-out" style="opacity: 0.5" src="{{ 'close.svg' | asset_url }}" />
+        </label>
+        {% else %}
+        <label for="swatch-{{ option_index }}-{{ value | handle }}">
+          {{ value }}
+          <img class="crossed-out" style="opacity: 0.5"  src="{{ 'close.svg' | asset_url }}" />
+        </label>
+        {% endif %}
       </div>
     {% endunless %}
     {% if variant.available %}
