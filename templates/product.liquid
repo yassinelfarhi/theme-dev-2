@@ -3,6 +3,9 @@
 {% render 'spurit_stp-product-snippet' %}
 <!-- /spurit_stp-added -->
 {% section 'product-template' %}
+{% if product.available and product.variants.size > 1 %}
+  {% render 'swatch' with 'Color' as swatch %}
+{% endif %}
 {% section 'related-products' %}
 {% section 'recently-viewed-products' %}
 <script type="text/javascript">
