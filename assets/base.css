@@ -180,10 +180,8 @@ body.template-index #main{
 }
       
 .center{
-  
-      text-align: center;
+    text-align: center;
     font-family: 'WulkanDisplay-SemiBold';
     font-size: 7.5pt;
     color: #fff !important;
-
 }
