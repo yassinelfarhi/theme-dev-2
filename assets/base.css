@@ -201,8 +201,8 @@ body.template-index #main{
      
 .center-block a{
    text-align: center;
-    text-decoration: none;
-    font-family: 'Metropolis-SemiBold';
+    text-decoration: none !important; 
+    font-family: 'Metropolis-SemiBold' !important;
     color: #fff !important;
     font-size: 10pt;
 }
