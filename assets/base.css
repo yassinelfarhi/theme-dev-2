@@ -190,6 +190,7 @@ body.template-index #main{
 .center-block{
 
   display:grid !important;
+  top: 82% !important;
 }
       
 .center-block span{
