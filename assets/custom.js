@@ -35,13 +35,7 @@
        }
   	})
       
-      function hideSwatchelemnt(type) {
-        if (type == "mat") {
-            $('[data-name="Material"]').parent().css( "display", "none" );
-        }else if(type == "size"){
-            //$('[data-name="Material"]').parent().css( "display", "none" );
-        }
-      }
+      
      if(typeof isIndex !== 'undefined' &&  isIndex){
        
        /*$(window).scroll(function() { 
@@ -128,6 +122,13 @@
       
       //adding watching customers script
     
+      function hideSwatchelemnt(type) {
+        if (type == "mat") {
+            $('[data-name="Material"]').parent().css( "display", "none" );
+        }else if(type == "size"){
+            //$('[data-name="Material"]').parent().css( "display", "none" );
+        }
+      }
       
       function randomCustomers() {
          $("#customers_view label").text(Math.floor(Math.random() * 15));
