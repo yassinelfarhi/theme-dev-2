@@ -76,7 +76,7 @@ a:hover{
 .item:nth-child(5) .item__img-wrap {
 	width: calc(100vw );
 	/* --aspect-ratio: 1500/580; */
-	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6258_2x1-4.jpg?v=1655122041);
+	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/ZR5B4866_2x1_9ea54c69-3d74-46a3-9d5c-1d0ec406ca66.jpg?v=1655122040);
 }
 .item:last-child {
 	margin-bottom: 500px;
