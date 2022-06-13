@@ -34,8 +34,6 @@
          default:  
        }
   	})
-     
-     
      if(typeof isIndex !== 'undefined' &&  isIndex){
        
        /*$(window).scroll(function() { 
@@ -175,7 +173,7 @@ if(typeof isIndex !== 'undefined' &&  isIndex){
             // the .item element
             this.DOM = {el: el};
             // the inner image
-            this.DOM.image = this.DOM.el.querySelector('.item__img-wrap');
+            this.DOM.image = this.DOM.el.querySelector('.item__img');
             this.renderedStyles = {
                 // here we define which property will change as we scroll the page and the items is inside the viewport
                 // in this case we will be translating the image on the y-axis
@@ -300,7 +298,7 @@ if(typeof isIndex !== 'undefined' &&  isIndex){
         }
         layout() {
             // translates the scrollable element
-            ///this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
+            this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
         }
         setSize() {
             // set the heigh of the body in order to keep the scrollbar on the page
