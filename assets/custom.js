@@ -300,7 +300,7 @@ if(typeof isIndex !== 'undefined' &&  isIndex){
         }
         layout() {
             // translates the scrollable element
-            this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
+            ///this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
         }
         setSize() {
             // set the heigh of the body in order to keep the scrollbar on the page
