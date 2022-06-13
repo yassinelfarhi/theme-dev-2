@@ -64,7 +64,7 @@ a:hover{
 .item:nth-child(3) .item__img-wrap {
 	width: calc(100vw);
 	/* --aspect-ratio: 1500/580; */
-	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6448_2x1_2622cc2e-e624-4a28-9e4f-b421c4683196.jpg?v=1654528597);
+	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A5933_2x1-3.jpg?v=1655122041);
 }
 
 .item:nth-child(4) .item__img-wrap {
