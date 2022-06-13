@@ -198,3 +198,13 @@ body.template-index #main{
     font-size: 19px !important;
     color: #fff !important;
 }
+     
+.center-block a{
+   text-align: center;
+    text-decoration: none;
+    font-family: 'Metropolis-SemiBold';
+    color: #fff !important;
+    font-size: 10pt;
+}
+      
+      
