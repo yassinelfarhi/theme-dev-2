@@ -58,7 +58,7 @@ a:hover{
 .item:nth-child(2) .item__img-wrap {
 	width: calc(100vw );
 	/* --aspect-ratio: 1500/580; */
-	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6396_2x1_3a57e6a5-e08a-47df-96c6-e94f3b656ad6.jpg?v=1654528597);
+	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6285_2x1-2.jpg?v=1655122041);
 }
 
 .item:nth-child(3) .item__img-wrap {
