@@ -34,6 +34,14 @@
          default:  
        }
   	})
+      
+      function hideSwatchelemnt(type) {
+        if (type == "mat") {
+            $('[data-name="Material"]').parent().css( "display", "none" );
+        }else if(type == "size"){
+            //$('[data-name="Material"]').parent().css( "display", "none" );
+        }
+      }
      if(typeof isIndex !== 'undefined' &&  isIndex){
        
        /*$(window).scroll(function() { 
