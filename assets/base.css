@@ -72,12 +72,18 @@ a:hover{
 	/* --aspect-ratio: 1500/580; */
 	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6258_2x1-4.jpg?v=1655122041);
 }
+
+.item:nth-child(5) .item__img-wrap {
+	width: calc(100vw );
+	/* --aspect-ratio: 1500/580; */
+	--image: url(https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6258_2x1-4.jpg?v=1655122041);
+}
 .item:last-child {
 	margin-bottom: 500px;
 }
 
 
-.item:nth-child(5) .item__img-wrap {
+.item:nth-child(6) .item__img-wrap {
 	width: calc(100vw - 2rem);
 	--aspect-ratio: 1500/844;
 	--image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/6.jpg);
