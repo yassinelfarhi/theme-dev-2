@@ -72,7 +72,7 @@
         <span id="ProductGallery" class="Anchor"></span>
 
         {%- if action_list_items != blank -%}
-          <div class="Product__ActionList hidden-lap-and-up">
+          <div class="Product__ActionList ">
           {{ action_list_items }}
           </div>
         {%- endif -%}
@@ -128,11 +128,6 @@
         {%- capture flickity_options -%}
         {
           "prevNextButtons": true,
-          "pageDots": {% if image_count > 1 %}true{% else %}false{% endif %},
-          "adaptiveHeight": false,
-          "wrapAround": false,
-          "watchCSS": false,
-          "dragThreshold": 8,
           "initialIndex": {{ initial_image_index }}
         }
         {%- endcapture -%}
