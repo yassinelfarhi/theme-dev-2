@@ -2572,7 +2572,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 }
 @media screen and (min-width: 1240px){
   .Product--small {
-    max-width: 965px;
+    max-width: 965px !important;
   }
 }
 
