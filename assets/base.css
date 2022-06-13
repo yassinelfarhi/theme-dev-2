@@ -190,3 +190,10 @@ body.template-index #main{
 
   display:grid !important;
 }
+      
+.center span{
+    text-align: center !important;
+       font-family: 'Metropolis-ExtraBold' !important;
+    font-size: 19px !important;
+    color: #fff !important;
+}
