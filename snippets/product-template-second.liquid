@@ -33,13 +33,12 @@
           <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: image.aspect_ratio }}%; --aspect-ratio: {{ image.aspect_ratio }};">
             {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
-            <img class="Image--lazyLoad Image--fadeIn"
+            <img class="Image--lazyLoad Image--fadeIn carousel-cell"
                  {% if initial_image_id == image.id %}src="{{ image | img_url: '250x' }}"{% endif %}
                  data-src="{{ image_url }}"
                  data-widths="[{{ supported_sizes }}]"
                  data-sizes="auto"
                  data-expand="-100"
-                 class="carousel-cell"
                  alt="{{ image.alt | escape }}"
                  data-max-width="{{ image.width }}"
                  data-max-height="{{ image.height }}"
