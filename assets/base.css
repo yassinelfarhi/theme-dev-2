@@ -206,6 +206,10 @@ body.template-index #main{
     font-family: 'Metropolis-SemiBold' !important;
     color: #fff !important;
     font-size: 10pt;
+  border: 1px solid;
+    width: 5%;
+    margin: auto;
+    padding: 5px 0px;
 }
       
       
