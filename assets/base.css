@@ -182,7 +182,7 @@ body.template-index #main{
 .center{
     text-align: center !important;
        font-family: 'Metropolis-SemiBold' !important;
-    font-size: 19px !important;
+    font-size: 15px !important;
     color: #fff !important;
       line-height: 15px !important;
 }
@@ -195,7 +195,7 @@ body.template-index #main{
 .center-block span{
     text-align: center !important;
        font-family: 'Metropolis-ExtraBold' !important;
-    font-size: 19px !important;
+    font-size: 30px !important;
     color: #fff !important;
 }
      
