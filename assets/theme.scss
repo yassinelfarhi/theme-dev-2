@@ -9294,7 +9294,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 
   .Product--small {
-    max-width: 1200px;
+    max-width: 950;
   }
 
   .Product--medium {
@@ -11933,11 +11933,6 @@ $vertical-spacing-two-products-per-row  : 0px;
   margin-top: 50px !important;
 } */
 
-@media screen and (min-width: 1240px){
-  .Product--small {
-    max-width: 965px !important;
-  }
-}
  
 .container-slider {
    transform: scale(0.6) !important;
