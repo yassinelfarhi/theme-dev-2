@@ -39,9 +39,10 @@
                  data-widths="[{{ supported_sizes }}]"
                  data-sizes="auto"
                  data-expand="-100"
+                 height="720px"
                  alt="{{ image.alt | escape }}"
                  data-max-width="{{ image.width }}"
-                 data-max-height="720"
+                 data-max-height="{{ image.height }}"
                  data-original-src="{{ image | img_url: 'master' }}">
 
             <img class="trust-img" src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/mda-en.png?v=1651147765" loading="lazy" >
@@ -137,7 +138,7 @@
         }
         {%- endcapture -%}
 
-        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" >
+        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
           {{ slideshow_images }}
         </div>
       </div>
