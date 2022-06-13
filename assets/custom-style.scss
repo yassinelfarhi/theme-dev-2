@@ -289,9 +289,12 @@ section.module.parallax-4 {
 
 .trust-img{
 
-    position: relative;
-    top: 301px;
-    right: 813px;
+    z-index: 1000;
+    position: absolute !important;
+    width: 21% !important;
+    height: 8% !important;
+    top: 1% !important;
+    left: 77% !important;
     opacity: 0.4;
 }
 
