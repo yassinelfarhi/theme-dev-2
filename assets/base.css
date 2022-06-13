@@ -9,6 +9,10 @@ a:hover{
 	}
 }
 
+label[data-name="Material"] < .swatch--gl {
+	display: none;
+}
+
 .content {
 	display: flex;
 	flex-direction: column;
