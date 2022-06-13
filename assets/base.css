@@ -185,3 +185,8 @@ body.template-index #main{
     font-size: 19px !important;
     color: #fff !important;
 }
+      
+.center-block{
+
+  display:grid !important;
+}
