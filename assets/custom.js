@@ -175,7 +175,7 @@ if(typeof isIndex !== 'undefined' &&  isIndex){
             // the .item element
             this.DOM = {el: el};
             // the inner image
-            this.DOM.image = this.DOM.el.querySelector('.item__img');
+            this.DOM.image = this.DOM.el.querySelector('.item__img-wrap');
             this.renderedStyles = {
                 // here we define which property will change as we scroll the page and the items is inside the viewport
                 // in this case we will be translating the image on the y-axis
