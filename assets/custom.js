@@ -67,10 +67,9 @@
            if (st > lastScrollTop){
              /* console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height()-200) */
                if($(window).scrollTop() + $(window).height() >= $(document).height() - 200 ) {
-                 move_box(250,true);
-                 setTimeout(function(){
-                   document.getElementById("shopify-section-footer").style.zIndex = "5";
-                  }, 1000);
+                 move_box(250,true , function(){
+                    document.getElementById("shopify-section-footer").style.zIndex = "5";
+                 });
         		}
            } else {
                if($(window).scrollTop() + $(window).height() <= $(document).height() - 50  ) {
@@ -82,9 +81,13 @@
            lastScrollTop = st;
         });
        
-       function move_box(val,bool) {
+       function move_box(val,bool,callback) {
         var the_box = document.getElementsByClassName("content")[0];
         set_translate(the_box, val, bool);
+        if (bool) {
+            callback();
+        }
+        
       }
 
       function set_translate(e, pix , bool) {
