@@ -133,11 +133,15 @@
 });
       
 function hideSwatchelemnt(type) {
-    debugger;
+    bool = false;
   if (type == "mat") {
       $('[data-name="Material"]').parent().css( "display", "none" );
+      bool = true;
   }else if(type == "size"){
       //$('[data-name="Material"]').parent().css( "display", "none" );
+  }
+  while (bool == false) {
+    hideSwatchelemnt(type)
   }
 }
 
