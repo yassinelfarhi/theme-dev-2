@@ -33,7 +33,7 @@
           <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: image.aspect_ratio }}%; --aspect-ratio: {{ image.aspect_ratio }};">
             {% assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
-            <img class="Image--lazyLoad Image--fadeIn carousel-cell"
+            <img class="Image--lazyLoad Image--fadeIn"
                  {% if initial_image_id == image.id %}src="{{ image | img_url: '250x' }}"{% endif %}
                  data-src="{{ image_url }}"
                  data-widths="[{{ supported_sizes }}]"
