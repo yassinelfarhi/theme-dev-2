@@ -194,10 +194,11 @@ body.template-index #main{
 }
       
 .center-block span{
-    text-align: center !important;
-       font-family: 'Metropolis-ExtraBold' !important;
-    font-size: 30px !important;
-    color: #fff !important;
+   text-align: center !important;
+   font-family: 'Metropolis-ExtraBold' !important;
+   font-size: 30px !important;
+   color: #fff !important;
+   text-transform: uppercase;
 }
      
 .center-block a{
