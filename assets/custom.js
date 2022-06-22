@@ -407,7 +407,7 @@ $('.img-parallax').each(function(){
       var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
     }
     img.css({
-      top: imgPercent + '%',
+      top: imgPercent + 20 + '%',
       transform: 'translate(-50%, -' + imgPercent + '%)'
     });
   }
