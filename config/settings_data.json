@@ -735,7 +735,7 @@
           "background_image": "shopify:\/\/shop_images\/maisoncaftan_atelier_am__2x1_3a5732c2-95e1-40f8-a57d-e00977519a13.jpg",
           "text_color": "#ffffff",
           "heading": "Opening Soon",
-          "show_newsletter_signup": true,
+          "show_newsletter_signup": false,
           "newsletter_text": "",
           "show_social_sharing": true,
           "social_message": "Spread the word"
