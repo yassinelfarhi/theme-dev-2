@@ -726,6 +726,20 @@
           "text_color": "#ffffff",
           "button_color": "#363636"
         }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/maisoncaftanrak_text4x1.png",
+          "logo_max_width": 255,
+          "background_image": "shopify:\/\/shop_images\/maisoncaftan_atelier_am__2x1_3a5732c2-95e1-40f8-a57d-e00977519a13.jpg",
+          "text_color": "#ffffff",
+          "heading": "Opening Soon",
+          "show_newsletter_signup": true,
+          "newsletter_text": "",
+          "show_social_sharing": true,
+          "social_message": "Spread the word"
+        }
       }
     },
     "content_for_index": [
