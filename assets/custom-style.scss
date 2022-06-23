@@ -802,14 +802,7 @@ section.module.parallax h2{
 /* - new style parallax - */
 
 
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'Amatic SC', cursive;
-}
+
 .block{
   width: 100%;
   height: calc(100vh - var(--header-height));
