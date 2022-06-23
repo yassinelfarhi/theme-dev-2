@@ -36,7 +36,7 @@
   	})
       
       
-     if(typeof isIndex !== 'undefined' &&  isIndex){
+    /* if(typeof isIndex !== 'undefined' &&  isIndex){
        
        /*$(window).scroll(function() { 
          if($(window).scrollTop() + $(window).height() >= $(document).height()   ) {
