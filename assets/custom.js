@@ -62,54 +62,7 @@
            //document.getElementById("shopify-section-footer").style.zIndex = "2";
          }
       });*/
-       
-       var lastScrollTop = 0;
-        $(window).scroll(function(event){
-           var st = $(this).scrollTop();
-           if (st > lastScrollTop){
-             /* console.log("DownScrolle"+ ($(window).scrollTop() + $(window).height()) +">="+ $(document).height()-200) */
-               if($(window).scrollTop() + $(window).height() >= $(document).height() - 50 ) {
-                 move_box(250,true);
-                 setTimeout(function(){
-                   document.getElementById("shopify-section-footer").style.zIndex = "5";
-                  }, 1000);
-        		}
-           } else {
-               if($(window).scrollTop() + $(window).height() <= $(document).height() - 50  ) {
-                 /* console.log("UpScrolle"+ ($(window).scrollTop() + $(window).height()) +"<="+ $(document).height()-200) */
-                 	document.getElementById("shopify-section-footer").style.zIndex = "2";
-              		move_box(0,false);
-        		}
-           }
-           lastScrollTop = st;
-        });
-       
-       function move_box(val,bool) {
-        var the_box = document.getElementsByClassName("content")[0];
-        set_translate(the_box, val, bool);
-      }
 
-      function set_translate(e, pix , bool) {
-        if(bool == true){
-          e.style["-webkit-transform"] = "translate(0px, "+ pix +"px)";
-          e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
-          e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
-          e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
-          e.style["transform"] = "translate(0px, -" + pix + "px)";
-        }else{
-          e.style["-webkit-transform"] = "translate(0px,0px)";
-          e.style["-moz-transform"] = "translate(0px,0px)";
-          e.style["-ms-transform"] = "translate(0px,0px)";
-          e.style["-o-transform"] = "translate(0px,0px)";
-          e.style["transform"] = "translate(0px,0px)";
-        }
-        
-      }
-     }
-     
-      
-      
-  });
 
     $(document).ready(function(){
       
