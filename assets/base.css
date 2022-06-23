@@ -167,7 +167,7 @@ body.template-index #shopify-section-header{
   
 }
 
-body.template-index .Container .Rte{
+body.template-index .Container > .Rte{
    margin-top: var(--header-height);
   
   
