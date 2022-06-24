@@ -1,5 +1,5 @@
 <div class="block">
-    <img src="{{ image.src}}"
+    <img src="{{ section.settings.image.src}}"
         data-speed="-1" class="img-parallax">
     <div class="container text-center positionImagetxt">
         <h2>New <br>in women</h2>
@@ -12,29 +12,29 @@
 {
 "name": "Text Box",
 "settings": [
-{
-"type": "image_picker",
-"id": "image",
-"label": "Image"
-},
-{
-"id": "custom_text_title",
-"type": "text",
-"label": "Text box heading",
-"default": "Title"
-},
-{
-"id": "custom_text_body",
-"type": "richtext",
-"label": "Add custom text below",
-"default": "<p>Add your text here</p>"
-}
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image"
+  },
+  {
+  "id": "custom_text_title",
+  "type": "text",
+  "label": "Text box heading",
+  "default": "Title"
+  },
+  {
+  "id": "custom_text_body",
+  "type": "richtext",
+  "label": "Add custom text below",
+  "default": "<p>Add your text here</p>"
+  }
 ],
 "presets": [
-{
-"name": "custom-text",
-"category": "Custom"
-}
+  {
+  "name": "custom-text",
+  "category": "Custom"
+  }
 ]
 }
 {% endschema %}
