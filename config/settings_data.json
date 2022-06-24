@@ -72,6 +72,15 @@
     "checkout_accent_color": "#a17c5e",
     "checkout_button_color": "#454545",
     "checkout_error_color": "#e32c2b",
+    "mapped_genders": "{'maleMapping': [''], 'femaleMapping': [''], 'defaultMapping': ['unisex']}",
+    "easysize_placeholder": "#product_form_6714815610949 > div.ProductForm__Variants > div:nth-child(1) > div",
+    "easysize_size_selector": "",
+    "easysize_order_button_id": ".product-form[method='post'] button[type='submit']",
+    "easysize_product_brand": "maisonducaftan",
+    "easysize_language": "english",
+    "easysize_size_update_function": "function(size) {\n    var size_element = document.querySelector('option[value=\"'+ size +'\"]');\n    if (size_element) {\n      size_element.click();\n      console.info(\"Easysize: Size element clicked\", size_element);\n      return true;\n    }\n    return false;\n  }",
+    "easysize_size_track_function": "document.querySelectorAll('.single-option-selector option').forEach(function(el) {\n  el.addEventListener('click', function(x) {\n    easy_size.sizeChangedTo(this.value);\n    console.info(\"Easysize: Size changed to\", this.value);\n  });\n});",
+    "easysize_shop_id": "9265560734",
     "sections": {
       "sidebar-menu": {
         "type": "sidebar-menu",
@@ -744,9 +753,7 @@
       "165607676009e28dcb": {
         "type": "home-page-paralax",
         "settings": {
-          "image": "shopify:\/\/shop_images\/1654950236_bdab46aa-b9b4-4a5c-8584-afcba0fca457.jpg",
-          "custom_text_title": "Title",
-          "custom_text_body": "<p>Add your text here<\/p>"
+          "image": "shopify:\/\/shop_images\/1654950236_bdab46aa-b9b4-4a5c-8584-afcba0fca457.jpg"
         }
       }
     },
