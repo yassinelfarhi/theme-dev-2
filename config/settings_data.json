@@ -740,6 +740,13 @@
           "show_social_sharing": true,
           "social_message": "Spread the word"
         }
+      },
+      "165607676009e28dcb": {
+        "type": "home-page-paralax",
+        "settings": {
+          "custom_text_title": "Title",
+          "custom_text_body": "<p>Add your text here<\/p>"
+        }
       }
     },
     "content_for_index": [
@@ -761,7 +768,8 @@
       "1650796917351910cb",
       "1653929841f8c5f97c",
       "16507996195ac63b26",
-      "1654513237f0736781"
+      "1654513237f0736781",
+      "165607676009e28dcb"
     ],
     "blocks": {
       "4571859552318407796": {
