@@ -744,6 +744,7 @@
       "165607676009e28dcb": {
         "type": "home-page-paralax",
         "settings": {
+          "image": "shopify:\/\/shop_images\/maisoncaftan_atelier_am__2x1_3a5732c2-95e1-40f8-a57d-e00977519a13.jpg",
           "custom_text_title": "Title",
           "custom_text_body": "<p>Add your text here<\/p>"
         }
