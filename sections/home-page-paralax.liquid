@@ -1,14 +1,14 @@
 <div class="block">
     <img src="{{ section.settings.image | image_url}}"
-        data-speed="-1" class="img-parallax">
+        data-speed="{{ section.settings.products_per_page }} " class="img-parallax">
   
     <div class="container text-center positionImagetxt">
-        <h2>New <br>in women</h2>
-        <a href=""> Discover</a>
+        <h2>{{ section.settings.text_title }} </h2>
+        <a href="{{ section.settings.href_lien }} "> {{ section.settings.text_lien }} </a>
     </div>
   
 </div>
-
+{{ section.settings.custom_text_title }} 
 {% schema %}
 {
 "name": "Text Box",
@@ -22,7 +22,7 @@
    	"type": "number",
     "id": "products_per_page",
     "label": "Products per page",
-    "default": 20
+    "default": 1
 
   },
   {
