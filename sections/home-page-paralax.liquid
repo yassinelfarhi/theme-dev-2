@@ -1,5 +1,5 @@
 <div class="block">
-    <img src="{{ section.settings.image.src}}"
+    <img src="{{ section.settings.image | image_url: width: 300 | image_tag}}"
         data-speed="-1" class="img-parallax">
     <div class="container text-center positionImagetxt">
         <h2>New <br>in women</h2>
