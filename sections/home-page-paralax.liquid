@@ -1,6 +1,10 @@
-<div class="custom-text-section">
-  <h2> {{ section.settings.custom_text_title }} </h2>
-  <div>{{ section.settings.custom_text_body }}</div>
+<div class="block">
+    <img src="https://cdn.shopify.com/s/files/1/0553/5226/2725/files/PQ0A6374nb_2x1_e3c39b70-30a6-41ac-8e14-fb9535e0e5f9.jpg?v=1654528597"
+        data-speed="-1" class="img-parallax">
+    <div class="container text-center positionImagetxt">
+        <h2>New <br>in women</h2>
+        <a href=""> Discover</a>
+    </div>
 </div>
 
 {% schema %}
@@ -19,7 +23,19 @@
         "label": "Add custom text below",
         "default": "<p>Add your text here</p>"
       }
-    ],
+    ],	"blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ],
     "presets": [
       {
         "name": "custom-text",
